@@ -13858,5 +13858,1685 @@
     "EXCHG_ecoli2_for_e_to_for": {
         "dG0": 0,
         "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ala__D_p_to_ala__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ca2_p_to_ca2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cl_p_to_cl": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cobalt2_p_to_cobalt2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fe3_p_to_fe3": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glyc_p_to_glyc": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_h2_p_to_h2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_k_p_to_k": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_kdo2lipid4_p_to_kdo2lipid4": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mg2_p_to_mg2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mn2_p_to_mn2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mobd_p_to_mobd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_murein5p5p_p_to_murein5p5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_murein5px4p_p_to_murein5px4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_na1_p_to_na1": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ni2_p_to_ni2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pe160_p_to_pe160": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pe161_p_to_pe161": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pro__L_p_to_pro__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_zn2_p_to_zn2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_10fthf_c_to_10fthf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_13dpg_c_to_13dpg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_1hdec9eg3p_c_to_1hdec9eg3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_1hdecg3p_c_to_1hdecg3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_1pyr5c_c_to_1pyr5c": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_23dhdp_c_to_23dhdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_23dhmb_c_to_23dhmb": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_23dhmp_c_to_23dhmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_25aics_c_to_25aics": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_25drapp_c_to_25drapp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_26dap__LL_c_to_26dap__LL": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_26dap__M_c_to_26dap__M": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2ahbut_c_to_2ahbut": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2cpr5p_c_to_2cpr5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2dda7p_c_to_2dda7p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2ddg6p_c_to_2ddg6p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2dhp_c_to_2dhp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2dmmq8_c_to_2dmmq8": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2dmmql8_c_to_2dmmql8": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2dr1p_c_to_2dr1p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2fe1s_c_to_2fe1s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2fe2s_c_to_2fe2s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2h3oppan_c_to_2h3oppan": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2ippm_c_to_2ippm": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2mahmp_c_to_2mahmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2me4p_c_to_2me4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2mecdp_c_to_2mecdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2obut_c_to_2obut": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2ohph_c_to_2ohph": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2oph_c_to_2oph": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2p4c2me_c_to_2p4c2me": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_2pg_c_to_2pg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_34hpp_c_to_34hpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3c2hmp_c_to_3c2hmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3c3hmp_c_to_3c3hmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3c4mop_c_to_3c4mop": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3dhq_c_to_3dhq": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3dhsk_c_to_3dhsk": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hbcoa_c_to_3hbcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hdcoa_c_to_3hdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hddcoa_c_to_3hddcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hhcoa_c_to_3hhcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hhdcoa_c_to_3hhdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hmrsACP_c_to_3hmrsACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3hocoa_c_to_3hocoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3htdcoa_c_to_3htdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3ig3p_c_to_3ig3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3mob_c_to_3mob": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3mop_c_to_3mop": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3odcoa_c_to_3odcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3oddcoa_c_to_3oddcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3ohcoa_c_to_3ohcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3ohdcoa_c_to_3ohdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3omrsACP_c_to_3omrsACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3oocoa_c_to_3oocoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3ophb_c_to_3ophb": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3otdcoa_c_to_3otdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3pg_c_to_3pg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3php_c_to_3php": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_3psme_c_to_3psme": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4abz_c_to_4abz": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4adcho_c_to_4adcho": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4ampm_c_to_4ampm": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4c2me_c_to_4c2me": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4crsol_c_to_4crsol": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4fe4s_c_to_4fe4s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4hbz_c_to_4hbz": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4mop_c_to_4mop": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4mpetz_c_to_4mpetz": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4pasp_c_to_4pasp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4per_c_to_4per": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4ppan_c_to_4ppan": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4ppcys_c_to_4ppcys": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_4r5au_c_to_4r5au": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5aizc_c_to_5aizc": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5aop_c_to_5aop": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5aprbu_c_to_5aprbu": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5apru_c_to_5apru": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5caiz_c_to_5caiz": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5drib_c_to_5drib": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_5mthf_c_to_5mthf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_6hmhpt_c_to_6hmhpt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_6hmhptpp_c_to_6hmhptpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_6pgc_c_to_6pgc": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_6pgl_c_to_6pgl": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_8aonn_c_to_8aonn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ACP_c_to_ACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_aacoa_c_to_aacoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acald_c_to_acald": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_accoa_c_to_accoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acg5p_c_to_acg5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acg5sa_c_to_acg5sa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acgam1p_c_to_acgam1p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acglu_c_to_acglu": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acon__C_c_to_acon__C": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acorn_c_to_acorn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_acser_c_to_acser": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_actp_c_to_actp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ade_c_to_ade": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_adn_c_to_adn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_adp_c_to_adp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ahcys_c_to_ahcys": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ahdt_c_to_ahdt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_aicar_c_to_aicar": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_air_c_to_air": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_akg_c_to_akg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ala__B_c_to_ala__B": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ala__L_c_to_ala__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_alaala_c_to_alaala": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_alac__S_c_to_alac__S": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_amet_c_to_amet": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_amob_c_to_amob": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_amp_c_to_amp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_anth_c_to_anth": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_aps_c_to_aps": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ara5p_c_to_ara5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_arg__L_c_to_arg__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_argsuc_c_to_argsuc": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_asn__L_c_to_asn__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_asp__L_c_to_asp__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_aspsa_c_to_aspsa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_atp_c_to_atp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_b2coa_c_to_b2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_bmoco_c_to_bmoco": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_bmoco1gdp_c_to_bmoco1gdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_bmocogdp_c_to_bmocogdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_btcoa_c_to_btcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_btn_c_to_btn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cbasp_c_to_cbasp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cbp_c_to_cbp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cdp_c_to_cdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cdpdhdec9eg_c_to_cdpdhdec9eg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cdpdhdecg_c_to_cdpdhdecg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_chor_c_to_chor": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cit_c_to_cit": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_citr__L_c_to_citr__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ckdo_c_to_ckdo": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cmp_c_to_cmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_coa_c_to_coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cpmp_c_to_cpmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cpppg3_c_to_cpppg3": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ctp_c_to_ctp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cys__L_c_to_cys__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cyst__L_c_to_cyst__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dad__2_c_to_dad__2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dad__5_c_to_dad__5": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dadp_c_to_dadp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_damp_c_to_damp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dann_c_to_dann": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_datp_c_to_datp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_db4p_c_to_db4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dc2coa_c_to_dc2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dcacoa_c_to_dcacoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dcamp_c_to_dcamp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dctp_c_to_dctp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dd2coa_c_to_dd2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ddca_c_to_ddca": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ddcaACP_c_to_ddcaACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ddcacoa_c_to_ddcacoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dgtp_c_to_dgtp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dha_c_to_dha": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhap_c_to_dhap": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhf_c_to_dhf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhgly_c_to_dhgly": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhnpt_c_to_dhnpt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhor__S_c_to_dhor__S": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhpmp_c_to_dhpmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhpt_c_to_dhpt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dhptd_c_to_dhptd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dmlz_c_to_dmlz": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dmpp_c_to_dmpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dnad_c_to_dnad": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dpcoa_c_to_dpcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dscl_c_to_dscl": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dtbt_c_to_dtbt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dtdp_c_to_dtdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dtmp_c_to_dtmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dttp_c_to_dttp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dump_c_to_dump": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_duri_c_to_duri": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_dxyl5p_c_to_dxyl5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_e4p_c_to_e4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_egmeACP_c_to_egmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_eig3p_c_to_eig3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_epmeACP_c_to_epmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_f6p_c_to_f6p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fad_c_to_fad": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fadh2_c_to_fadh2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fdp_c_to_fdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fgam_c_to_fgam": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_flxr_c_to_flxr": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_flxso_c_to_flxso": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fmn_c_to_fmn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fpram_c_to_fpram": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fprica_c_to_fprica": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_frdp_c_to_frdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fum_c_to_fum": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_g3p_c_to_g3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_g6p_c_to_g6p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gam1p_c_to_gam1p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gam6p_c_to_gam6p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gar_c_to_gar": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gcald_c_to_gcald": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gdp_c_to_gdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gln__L_c_to_gln__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glu__D_c_to_glu__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glu__L_c_to_glu__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glu1sa_c_to_glu1sa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glu5p_c_to_glu5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glu5sa_c_to_glu5sa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glutrna_c_to_glutrna": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glx_c_to_glx": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gly_c_to_gly": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glyc__R_c_to_glyc__R": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glyc3p_c_to_glyc3p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glyclt_c_to_glyclt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gmeACP_c_to_gmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gmp_c_to_gmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_grdp_c_to_grdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_grxox_c_to_grxox": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_grxrd_c_to_grxrd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gthox_c_to_gthox": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gthrd_c_to_gthrd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_gtp_c_to_gtp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_h2mb4p_c_to_h2mb4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_h2s_c_to_h2s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hco3_c_to_hco3": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hcys__L_c_to_hcys__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdca_c_to_hdca": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdcap_c_to_hdcap": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdcea_c_to_hdcea": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdceap_c_to_hdceap": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdcoa_c_to_hdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdd2coa_c_to_hdd2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hdeACP_c_to_hdeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hgmeACP_c_to_hgmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_his__L_c_to_his__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hisp_c_to_hisp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_histd_c_to_histd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hmbil_c_to_hmbil": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hom__L_c_to_hom__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hpmeACP_c_to_hpmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hx2coa_c_to_hx2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_hxcoa_c_to_hxcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iasp_c_to_iasp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_icit_c_to_icit": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ile__L_c_to_ile__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_imacp_c_to_imacp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_imp_c_to_imp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_indole_c_to_indole": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ipdp_c_to_ipdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscs_c_to_iscs": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscssh_c_to_iscssh": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscu_c_to_iscu": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscu__2fe2s_c_to_iscu__2fe2s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscu__2fe2s2_c_to_iscu__2fe2s2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_iscu__4fe4s_c_to_iscu__4fe4s": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_kdo_c_to_kdo": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_kdo8p_c_to_kdo8p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_kdolipid4_c_to_kdolipid4": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_leu__L_c_to_leu__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_lipidA_c_to_lipidA": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_lipidAds_c_to_lipidAds": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_lipidX_c_to_lipidX": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_lys__L_c_to_lys__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mal__L_c_to_mal__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_malACP_c_to_malACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_malcoa_c_to_malcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_malcoame_c_to_malcoame": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mdhdhf_c_to_mdhdhf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_met__L_c_to_met__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_methf_c_to_methf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mlthf_c_to_mlthf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_moadamp_c_to_moadamp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_moadcoo_c_to_moadcoo": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_moadcosh_c_to_moadcosh": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_moco_c_to_moco": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mpt_c_to_mpt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mptamp_c_to_mptamp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mql8_c_to_mql8": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mqn8_c_to_mqn8": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mthgxl_c_to_mthgxl": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_mththf_c_to_mththf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nad_c_to_nad": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nadh_c_to_nadh": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nadp_c_to_nadp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nadph_c_to_nadph": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nicrnt_c_to_nicrnt": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_oaa_c_to_oaa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_oc2coa_c_to_oc2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_occoa_c_to_occoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_octdp_c_to_octdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ogmeACP_c_to_ogmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ohpb_c_to_ohpb": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_opmeACP_c_to_opmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_orn_c_to_orn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_orot_c_to_orot": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_orot5p_c_to_orot5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pa160_c_to_pa160": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pa161_c_to_pa161": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_palmACP_c_to_palmACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pan4p_c_to_pan4p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pant__R_c_to_pant__R": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pap_c_to_pap": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_paps_c_to_paps": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pdx5p_c_to_pdx5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pep_c_to_pep": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_phe__L_c_to_phe__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pheme_c_to_pheme": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_phom_c_to_phom": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_phpyr_c_to_phpyr": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_phthr_c_to_phthr": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pimACP_c_to_pimACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pmeACP_c_to_pmeACP": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pmtcoa_c_to_pmtcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pnto__R_c_to_pnto__R": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ppbng_c_to_ppbng": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pphn_c_to_pphn": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ppi_c_to_ppi": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ppp9_c_to_ppp9": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pppg9_c_to_pppg9": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pram_c_to_pram": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pran_c_to_pran": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_prbamp_c_to_prbamp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_prbatp_c_to_prbatp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_prfp_c_to_prfp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_prlp_c_to_prlp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_prpp_c_to_prpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ps160_c_to_ps160": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ps161_c_to_ps161": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pser__L_c_to_pser__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pydx5p_c_to_pydx5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_pyr_c_to_pyr": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_q8_c_to_q8": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_q8h2_c_to_q8h2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_quln_c_to_quln": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_r1p_c_to_r1p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_r5p_c_to_r5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_rhcys_c_to_rhcys": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ribflv_c_to_ribflv": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ru5p__D_c_to_ru5p__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_s7p_c_to_s7p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_scl_c_to_scl": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ser__L_c_to_ser__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_sheme_c_to_sheme": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_skm_c_to_skm": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_skm5p_c_to_skm5p": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_sl26da_c_to_sl26da": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_sl2a6o_c_to_sl2a6o": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_so3_c_to_so3": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_succoa_c_to_succoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_suchms_c_to_suchms": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_td2coa_c_to_td2coa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_tdcoa_c_to_tdcoa": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_thdp_c_to_thdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_thf_c_to_thf": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_thmmp_c_to_thmmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_thmpp_c_to_thmpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_thr__L_c_to_thr__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_trnaglu_c_to_trnaglu": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_trp__L_c_to_trp__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_tyr__L_c_to_tyr__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_u23ga_c_to_u23ga": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_u3aga_c_to_u3aga": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_u3hga_c_to_u3hga": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uaagmda_c_to_uaagmda": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uaccg_c_to_uaccg": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uacgam_c_to_uacgam": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uagmda_c_to_uagmda": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uama_c_to_uama": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uamag_c_to_uamag": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uamr_c_to_uamr": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_udcpdp_c_to_udcpdp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_udcpp_c_to_udcpp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_udp_c_to_udp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ugmd_c_to_ugmd": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ugmda_c_to_ugmda": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ump_c_to_ump": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uppg3_c_to_uppg3": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ura_c_to_ura": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_uri_c_to_uri": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_utp_c_to_utp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_val__L_c_to_val__L": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_xmp_c_to_xmp": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_xu5p__D_c_to_xu5p__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glxBIO_c_to_glxBIO": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_forBIO_c_to_forBIO": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_fe2_e_to_fe2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_nh4_e_to_nh4": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_cu2_e_to_cu2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_glc__D_e_to_glc__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_o2_e_to_o2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_so4_e_to_so4": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_co2_e_to_co2": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_meoh_e_to_meoh": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_ac_e_to_ac": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_etoh_e_to_etoh": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_succ_e_to_succ": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_lac__D_e_to_lac__D": {
+        "dG0": 0,
+        "uncertainty": 0
+    },
+    "EXCHG_ecoli3_for_e_to_for": {
+        "dG0": 0,
+        "uncertainty": 0
     }
 }

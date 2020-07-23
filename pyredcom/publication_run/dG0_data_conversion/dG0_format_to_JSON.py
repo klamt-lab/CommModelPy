@@ -24,6 +24,7 @@ for dG0_line in dG0_lines:
         continue
     dG0_data_dict[reaction_name+"_ecoli1"] = {}
     dG0_data_dict[reaction_name+"_ecoli2"] = {}
+    dG0_data_dict[reaction_name+"_ecoli3"] = {}
     dG0 = float(dG0_str)
 
     part_with_uncertainty = dG0_line.split("deltaGR0_Uncertainty;#;num;#;")[1]
@@ -32,8 +33,10 @@ for dG0_line in dG0_lines:
 
     dG0_data_dict[reaction_name+"_ecoli1"]["dG0"] = dG0
     dG0_data_dict[reaction_name+"_ecoli2"]["dG0"] = dG0
+    dG0_data_dict[reaction_name+"_ecoli3"]["dG0"] = dG0
     dG0_data_dict[reaction_name+"_ecoli1"]["uncertainty"] = uncertainty
     dG0_data_dict[reaction_name+"_ecoli2"]["uncertainty"] = uncertainty
+    dG0_data_dict[reaction_name+"_ecoli3"]["uncertainty"] = uncertainty
 
 json_write("./pyredcom/publication_run/dG0_data_JSON/dG0.json", dG0_data_dict)
 
