@@ -1,0 +1,1782 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta name="generator" content="pdoc 0.7.1" />
+<title>pyredcom API documentation</title>
+<meta name="description" content="This module contains all major class and function definitions of
+pyredcom. pyredcom&#39;s source code is intersected in two parts: …" />
+<link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css' rel='stylesheet'>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css' rel='stylesheet'>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+<style>.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:30px;overflow:hidden}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:1em 0 .50em 0}h3{font-size:1.4em;margin:25px 0 10px 0}h4{margin:0;font-size:105%}a{color:#058;text-decoration:none;transition:color .3s ease-in-out}a:hover{color:#e82}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900}pre code{background:#f8f8f8;font-size:.8em;line-height:1.4em}code{background:#f2f2f1;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{background:#f8f8f8;border:0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0;padding:1ex}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{font-weight:bold}#index h4 + ul{margin-bottom:.6em}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-weight:bold;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}.admonition{padding:.1em .5em;margin-bottom:1em}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.item .name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul{padding-left:1.5em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>pyredcom</code></h1>
+</header>
+<section id="section-intro">
+<p>This module contains all major class and function definitions of
+pyredcom. pyredcom's source code is intersected in two parts:</p>
+<ol>
+<li>The definition of all dataclasses which describe single models and a community.</li>
+<li>The definition of the pyredcom functions which can be used using the dataclasses.</li>
+</ol>
+<h2 id="references">References</h2>
+<ul>
+<li>Koch, S., Kohrs, F., Lahmann, P., Bissinger, T., Wendschuh, S., Benndorf, D., &hellip; &amp; Klamt, S. (2019).
+RedCom: A strategy for reduced metabolic modeling of complex microbial communities and its
+application for analyzing experimental datasets from anaerobic digestion.
+<i>PLoS computational biology, 15(2)</i>, e1006759.
+<a href="https://doi.org/10.1371/journal.pcbi.1006759">doi:10.1371/journal.pcbi.1006759</a></li>
+</ul>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">#!/usr/bin/env python3
+#
+# Copyright 2020 PSB
+#
+# Licensed under the Apache License, Version 2.0 (the &#34;License&#34;);
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an &#34;AS IS&#34; BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+&#34;&#34;&#34;
+This module contains all major class and function definitions of
+pyredcom. pyredcom&#39;s source code is intersected in two parts:
+
+1. The definition of all dataclasses which describe single models and a community.
+2. The definition of the pyredcom functions which can be used using the dataclasses.
+
+References
+----------
+* Koch, S., Kohrs, F., Lahmann, P., Bissinger, T., Wendschuh, S., Benndorf, D., ... &amp; Klamt, S. (2019).
+  RedCom: A strategy for reduced metabolic modeling of complex microbial communities and its
+  application for analyzing experimental datasets from anaerobic digestion.
+  &lt;i&gt;PLoS computational biology, 15(2)&lt;/i&gt;, e1006759.
+  [doi:10.1371/journal.pcbi.1006759](https://doi.org/10.1371/journal.pcbi.1006759)
+&#34;&#34;&#34;
+# IMPORT SECTION
+# External modules
+import cobra
+import copy
+from dataclasses import dataclass
+from typing import Dict, List, Tuple
+
+
+# DATACLASS DEFINITIONS SECTION
+@dataclass
+class SingleModel:
+    &#34;&#34;&#34;Dataclass for the description of a single cobra model.
+
+    Description
+    ----------
+    An instance of this dataclass contains a cobrapy model itself,
+    as well as additional information regarding its objective and
+    its inputs and outputs.
+
+    Use case
+    ----------
+    In pyredcom, SingleModel instances are intended to be used
+    within Community instances. The additional information of SingleModel
+    instances is then used for the generation of the actual community model.
+
+    Member variables
+    ----------
+    * cobra_model: cobra.Model ~ The cobrapy model
+    * species_abbreviation: str ~ A short name for the species that is represented by cobra_model.
+      It must not contain underscores!
+    * objective_reaction_id: str ~ The reaction ID of the cobra_model&#39;s objective (only single-reaction
+      objectives are allowed!).
+    * exchange_reaction_id_prefix: str ~ The prefix of the cobra_model&#39;s exchange reactions. E.g., in
+      BIGG models, &#34;EX_&#34; is the prefix for exchange reactions.
+    * input_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+      by the cobra_model. At least all essential medium metabolite should be listed here.
+    * output_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+      by the cobra_model. At least all essential medium metabolite should be listed here.
+    * model_metabolite_to_exchange_id_mapping: Dict[str, str] ~ A dictionary containing the names of
+      all input and output metabolite IDs as keys, and the corresponding metabolite ID names in the
+      exchange compartment as children. The children must not already contain the exchange compartment&#39;s
+      ID itself as this ID will be added at a later stage after its definition in the Community instance.
+
+    Usage example
+    ----------
+    Suppose we defined a BIGG-compliant core model of &lt;i&gt;E. coli&lt;/i&gt;, and
+    we set the exchange compartment metabolite names just as the metabolite
+    IDs themselves without the addition of the underscore plus compartment name, then
+    a SingleModel definition could look like this:
+    &lt;pre&gt;
+    single_ec_core_model = SingleModel(
+        cobra_model=e_coli_core_model,
+        objective_reaction_id=&#34;BIOMASS_ec_core&#34;,
+        exchange_reaction_id_prefix=&#34;EX_&#34;,
+        input_metabolite_ids=[&#34;glc__D_e&#34;, &#34;o2_e&#34;, &#34;h_e&#34;, &#34;h2o_e&#34;],
+        output_metabolite_ids=[&#34;ac_e&#34;, &#34;h2o_e&#34;, &#34;h_e&#34;],
+        model_metabolite_to_exchange_id_mapping={
+            &#34;glc__D_e&#34;: &#34;glc__D&#34;,
+            &#34;o2_e&#34;: &#34;o2&#34;,
+            &#34;h_e&#34;: &#34;h&#34;,
+            &#34;h2o_e&#34;: &#34;h2o&#34;,
+            &#34;ac_e&#34;: &#34;ac&#34;,
+        }
+    )
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    cobra_model: cobra.Model
+    species_abbreviation: str
+    objective_reaction_id: str
+    exchange_reaction_id_prefix: str
+    input_metabolite_ids: List[str]
+    output_metabolite_ids: List[str]
+    model_metabolite_to_exchange_id_mapping: Dict[str, str]
+
+
+@dataclass
+class Community:
+    &#34;&#34;&#34;Dataclass for the definition of a community of SingleModel instances.
+
+    Description
+    ----------
+    An instance of Community contains single SingleModel instances which describe
+    the single-organism constituents of the community. In addition, it contains
+    information of the community&#39;s exchange compartment and what is allowed for
+    uptake and intake with the community.
+
+    Use case
+    ----------
+    In pyredcom, Community instances are directly used in order to create a
+    community model according to the RedCom method.
+
+    Member variables
+    ----------
+    * single_models: List[SingleModel] ~ The list of single models which shall be
+      merged into a RedCom community model.
+    * exchange_compartment_id: str ~ The name extension of the RedCom-analogous
+      exchange compartment metabolites. One common name would be &#34;_exchg&#34;.
+    * exchange_reaction_id_prefix: str ~ The prefix for the community&#39;s (not the
+      single organisms&#39;s) exhange reactions, i.e. the metabolites that the
+      community can have as intake or outtake. One common prefix would be
+      &#34;EX_C_&#34; (where the &#34;C_&#34; stands for community :-).
+    * input_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+      metabolites which can be taken as input by the community. This list of IDs must not contain
+      the exchange_compartment_id.
+    * output_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+      metabolites which can be secreted by the community. This list of IDs must not contain
+      the exchange_compartment_id.
+
+    Usage example
+    ----------
+    Suppose we want to create a community of two core models - one from *Escherichia coli* and
+    one from *Vibrio natriegens* - and we want to name the exchange compartment &#34;exchg&#34; and
+    set the prefix of the community&#39;s exchange metabolites to &#34;EX_C&#34; and *E. coli* has the
+    input metabolites glc__D, o2, h and h2o, and *V. natriegens* the additional input
+    metabolite biotin, and both habe the output metabolites ac and co2,
+    then we could set the Community instance as follows:
+    &lt;pre&gt;
+    community_example = Community(
+        single_models = [ecoli_core, vnatriegens_core],
+        exchange_compartment_id = &#34;exchg&#34;,
+        exchange_reaction_id_prefix = &#34;EX_C&#34;,
+        input_metabolite_ids = [&#34;glc__D&#34;, &#34;o2&#34;, &#34;h&#34;, &#34;h2o&#34;, &#34;ac&#34;, &#34;biotin&#34;],
+        output_metabolite_ids = [&#34;ac&#34;, &#34;co2&#34;]
+    )
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    single_models: List[SingleModel]
+    exchange_compartment_id: str
+    exchange_reaction_id_prefix: str
+    input_metabolite_ids: List[str]
+    output_metabolite_ids: List[str]
+
+
+# FUNCTION DEFINITIONS SECTION
+def community_model_fba_summary(model: cobra.Model, exchange_reaction_id_prefix: str = &#34;EX_C_&#34;,
+                                optimization_title: str = &#34;FBA&#34;) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Performs an FBA (or any kind of modified optimization) on a pyredcom-generated community model and prints the results.
+
+    Description
+    ----------
+    The model-described optimization problem is solved using cobrapy.Model&#39;s optimize() function. Then,
+    the in and out fluxes of the whole community (i.e., what the community takes and secretes) are printed,
+    as well as the species-internal in and out fluxes and the occurring species.
+
+
+    Return values
+    ----------
+    Two values are returned:
+
+    1. A cobra.Solution instance containing the FBA solution. This instance can be used as
+       any other cobrapy FBA result.
+    2. A listed (i.e., put into []) dictionary containing the occurrence or non-occurrence of species in the
+       calculated optimization solution. E.g., if a species with the community ID &#34;ecoli&#34; occurs with growth
+       in the solution and another community species calles &#34;vnat&#34; does not occur in it, the resulting value
+       would be [{&#34;ecoli1&#34;: 1, &#34;vnat&#34;: 0}]. &#34;1&#34; stands for &#34;occurrence&#34;, &#34;0&#34; for &#34;non-occurrence&#34;.
+
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The pyredcom-generated RedCom community model as cobrapy Model instance.
+    * exchange_reaction_id_prefix: str = &#34;EX_C_&#34; ~ The exchange reaction ID prefix as given during the
+      generation of the model&#39;s Community instance.
+    * optimization_title: str = &#34;FBA&#34;~ Will be printed at the beginning of the FBA summary as
+      f&#34;==SUMMARY OF {optimization_title} RESULT==&#34;
+    &#34;&#34;&#34;
+    # Optimize for the model&#39;s given optimization problem :D
+    fba_solution = model.optimize()
+
+    # Get community in and out fluxes text
+    community_exchange_reaction_ids = [x.id for x in model.reactions if x.id.startswith(exchange_reaction_id_prefix)]
+    community_in_fluxes = &#34;COMMUNITY IN FLUXES:&#34;
+    community_out_fluxes = &#34;\nCOMMUNITY OUT FLUXES:&#34;
+    for exchange_reaction_id in community_exchange_reaction_ids:
+        flux = round(fba_solution.fluxes[exchange_reaction_id], 3)
+        description = &#34;\n&#34; + exchange_reaction_id.replace(exchange_reaction_id_prefix, &#34;&#34;) + &#34;: &#34; + str(flux)
+        if flux &lt; 0:
+            community_in_fluxes += description
+        elif flux &gt; 0:
+            community_out_fluxes += description
+
+    # Get sepecies-internal in and out fluxes text
+    species_exchange_reaction_ids = [x.id for x in model.reactions if x.id.startswith(&#34;EXCHG_&#34;)]
+    species_in_fluxes = &#34;\nSPECIES-INTERNAL IN FLUXES:&#34;
+    species_out_fluxes = &#34;\nSPECIES-INTERNAL OUT FLUXES:&#34;
+    active_organisms: List[str] = []
+    inactive_organisms: List[str] = []
+    for exchange_reaction_id in species_exchange_reaction_ids:
+        flux = round(fba_solution.fluxes[exchange_reaction_id], 3)
+        description = &#34;\n&#34; + exchange_reaction_id.replace(&#34;EXCHG_&#34;, &#34;&#34;) + &#34;: &#34; + str(flux)
+        if flux &lt; 0:
+            species_in_fluxes += description
+            active_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+        elif flux &gt; 0:
+            species_out_fluxes += description
+            active_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+        else:
+            inactive_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+    active_organisms = list(set(active_organisms))
+    inactive_organisms = list(set(inactive_organisms))
+
+    # Get objective solution text
+    objective = f&#34;\nObjective {str(model.objective.expression)} has the value...\n{str(fba_solution.objective_value)}&#34;
+
+    # Create organism activity dictionary and corresponding output text
+    organism_occurence_dictionary: Dict[str, int] = {}
+    active_organisms_text = f&#34;\nActive organisms: &#34;
+    inactive_organisms_text = f&#34;\nInactive organisms: &#34;
+    for active_organism in active_organisms:
+        organism_occurence_dictionary[active_organism] = 1
+        active_organisms_text += &#34;\n* &#34; + active_organism
+    for inactive_organism in inactive_organisms:
+        if inactive_organism not in organism_occurence_dictionary.keys():
+            organism_occurence_dictionary[inactive_organism] = 0
+            inactive_organisms_text += &#34;\n* &#34; + inactive_organism
+
+    # Print the optimization results :D
+    print(f&#34;===SUMMARY OF {optimization_title}===&#34;)
+    print(community_in_fluxes)
+    print(community_out_fluxes)
+    print(species_in_fluxes)
+    print(species_out_fluxes)
+    print(objective)
+    print(active_organisms_text)
+    print(inactive_organisms_text)
+
+    return fba_solution, [organism_occurence_dictionary]
+
+
+def generate_community_cobra_model(community: Community) -&gt; cobra.Model:
+    &#34;&#34;&#34;Creates a RedCom community cobrapy model from a pyredcom Community instance.
+
+    Description
+    ----------
+    This functions uses all the extra information that is given to the Community
+    instance&#39;s member variables - and its SingleModel member variables - in order
+    to generate a community model with an exchange compartment, species-specific
+    exchange reactions as well as community-wide exchange reactions.
+
+    Return value
+    ----------
+    A community model (according to the RedCom method) in the form of a cobrapy
+    Model instance.
+
+    Arguments
+    ----------
+    * community: Community ~ The Community instance describing the total community.
+    &#34;&#34;&#34;
+    # Check that an actual community is given
+    if len(community.single_models) &lt;= 1:
+        print(&#34;ERROR: Less than 2 models in given Community instance!&#34;)
+        return
+
+    # Check that no underscores are in the organism IDs
+    for single_model in community.single_models:
+        if &#34;_&#34; in single_model.species_abbreviation:
+            print(f&#34;ERROR: Underscore in the given species abbreviation {single_model.species_abbreviation} D:&#34;)
+            return
+
+    for single_model in community.single_models:
+        # Check for exchange reactions with standard name
+        exchange_reaction_ids = [x.id for x in single_model.cobra_model.reactions
+                                 if x.id.startswith(single_model.exchange_reaction_id_prefix)]
+        for exchange_reaction_id in exchange_reaction_ids:
+            reaction = single_model.cobra_model.reactions.get_by_id(exchange_reaction_id)
+            reaction.lower_bound = 0
+            reaction.upper_bound = 0
+
+        # Rename metabolites
+        for metabolite in single_model.cobra_model.metabolites:
+            metabolite.id += &#34;_&#34; + single_model.species_abbreviation
+
+        # Rename reactions
+        for reaction in single_model.cobra_model.reactions:
+            reaction.id += &#34;_&#34; + single_model.species_abbreviation
+
+    # Merge models
+    merged_cobra_model = copy.deepcopy(community.single_models[0].cobra_model)
+    for single_model in community.single_models[1:]:
+        merged_cobra_model.merge(single_model.cobra_model, inplace=True)
+
+    # Create exchange compartment
+    merged_cobra_model.compartments[community.exchange_compartment_id] = &#34;Exchange compartment&#34;
+    for single_model in community.single_models:
+        for model_metabolite_id in single_model.model_metabolite_to_exchange_id_mapping.keys():
+            community_model_metabolite_id = model_metabolite_id + &#34;_&#34; + single_model.species_abbreviation
+            community_model_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_metabolite_id)
+
+            exchange_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[model_metabolite_id]
+            community_model_exchange_metabolite_id = exchange_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+            community_model_metabolite_ids = [x.id for x in merged_cobra_model.metabolites]
+            if community_model_exchange_metabolite_id in community_model_metabolite_ids:
+                exchange_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_exchange_metabolite_id)
+            else:
+                exchange_metabolite = cobra.Metabolite(
+                    id=exchange_metabolite_id+&#34;_&#34;+community.exchange_compartment_id,
+                    compartment=community.exchange_compartment_id
+                )
+
+            exchange_reaction_id = &#34;EXCHG_&#34;+single_model.species_abbreviation+&#34;_&#34;+model_metabolite_id+&#34;_to_&#34;+exchange_metabolite_id
+            exchange_reaction = cobra.Reaction(id=exchange_reaction_id)
+            if model_metabolite_id in single_model.input_metabolite_ids:
+                exchange_reaction.lower_bound = -1000
+                if model_metabolite_id in single_model.output_metabolite_ids:
+                    exchange_reaction.upper_bound = 1000
+                else:
+                    exchange_reaction.upper_bound = 0
+            elif model_metabolite_id in single_model.input_metabolite_ids:
+                exchange_reaction.lower_bound = 0
+                exchange_reaction.upper_bound = 1000
+            exchange_reaction.add_metabolites({
+                community_model_metabolite: -1,
+                exchange_metabolite: 1
+            })
+            merged_cobra_model.add_reactions([exchange_reaction])
+
+    # Input metabolites
+    for input_metabolite_id in community.input_metabolite_ids:
+        community_model_metabolite = merged_cobra_model.metabolites.get_by_id(input_metabolite_id+&#34;_&#34;+community.exchange_compartment_id)
+        input_reaction = cobra.Reaction(
+            id=community.exchange_reaction_id_prefix+input_metabolite_id+&#34;_&#34;+community.exchange_compartment_id,
+            lower_bound=-1000,
+            upper_bound=0
+        )
+        input_reaction.add_metabolites({
+            community_model_metabolite: -1,
+        })
+        merged_cobra_model.add_reactions([input_reaction])
+
+    # Output metabolites
+    for output_metabolite_id in community.output_metabolite_ids:
+        community_model_metabolite_id = output_metabolite_id + &#34;_&#34; + community.exchange_compartment_id
+        community_model_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_metabolite_id)
+        output_reaction_id = community.exchange_reaction_id_prefix+output_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+        community_model_reaction_ids = [x.id for x in merged_cobra_model.reactions]
+        if output_reaction_id in community_model_reaction_ids:
+            reaction = merged_cobra_model.reactions.get_by_id(output_reaction_id)
+            reaction.upper_bound = 1000
+        else:
+            output_reaction = cobra.Reaction(
+                id=output_reaction_id,
+                lower_bound=0,
+                upper_bound=1000
+            )
+            output_reaction.add_metabolites({
+                community_model_metabolite: -1,
+            })
+            merged_cobra_model.add_reactions([output_reaction])
+
+    # Community biomass metabolite
+    community_biomass_metabolite = cobra.Metabolite(
+        id=&#34;community_biomass&#34;,
+        compartment=community.exchange_compartment_id
+    )
+
+    objective_reaction_ids = [x.objective_reaction_id+&#34;_&#34;+x.species_abbreviation for x in community.single_models]
+    for objective_reaction_id in objective_reaction_ids:
+        objective_reaction = merged_cobra_model.reactions.get_by_id(objective_reaction_id)
+        objective_reaction.add_metabolites({
+            community_biomass_metabolite: 1
+        })
+
+    # Setting of new objective reaction
+    merged_objective_reaction = cobra.Reaction(
+        id=&#34;COMMUNITY_GROWTH&#34;,
+        lower_bound=0,
+        upper_bound=1000
+    )
+    merged_objective_reaction.add_metabolites({
+        community_biomass_metabolite: -1,
+    })
+    merged_cobra_model.add_reactions([merged_objective_reaction])
+    merged_cobra_model.objective = &#34;COMMUNITY_GROWTH&#34;
+
+    return merged_cobra_model
+
+
+def minimal_species_redcom_fba(model: cobra.Model, fixed_growth_rate: float,
+                               target_reaction_id: str = &#34;&#34;, target_reaction_value: float = 0.0,
+                               previous_solutions: List[Dict[str, int]] = []) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Performs a minimal species RedCom FBA with the given model and - optionally - the given target reaction flux.
+
+    Description
+    ----------
+    This function changes the RedCom FBA&#39;s objective by searching a solution for which the *minimal* amount of
+    species is needed in order to fulfill the given community growth rate and - optionally - the target reaction flux.
+
+    The whole optimization process is called the &#34;minimal species RedCom FBA&#34; and is defined as a MILP using optlang.
+    In comparison to the original RedCom FBA formulation (Koch et al., 2019)
+
+    Return values
+    ----------
+    The same 2 values as this module&#39;s community_model_fba_summary(), the following variables and constraints are added:
+
+    1. For each of the community&#39;s organism, an integer variable which can be either 0 or 1 is defined. &#34;0&#34; stands for
+        &#34;this organism does *not* plays a role in the solution&#34;, &#34;1&#34; stands for &#34;this organism plays a role in the solution&#34;.
+        Let us call each of these variables S_s, where &#34;S&#34; stands for &#34;species indicator&#34;, and &#34;s&#34; for the specific species
+        it is associated to.
+    2. For each S_s, the following new constraint is added: 0 &lt;= S_s - F_s &lt;= 1, where F_s stands for the fraction variable
+       of the associated species (see Koch et al., 2019). In other words, if S_s is 0 (i.e., the species does not occur),
+       the equation is 0 &lt;= 0 - F_s &lt;= 1. Since F_s is in the range [0;1], the species&#39; fraction F_s must be 0 if S_s
+       is also 0 in order to fulfill the newly added constraint.
+    3. The objective function was redefined as the *minimization* of the sum of all S_s. In other words, the minimal amount
+       of species needed in order to fulfill the given constraints is searched.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The pyredcom-generated community cobrapy model.
+    * fixed_growth_rate: float ~ The fixed grwoth rate for all species of the modelled community.
+    * target_reaction_id: str = &#34;&#34; ~ A target reaction which can be set to a given value using target_reaction_value.
+      Is &#34;&#34; if no target reaction shall be set.
+    * target_reaction_value: float = 0.0 ~ If target_reaction_id != &#34;&#34;, this is the flux value to which the reaction
+      will be set.
+    * previous_solutions: List[Dict[str, int]] = [] ~ A list of previous species solutions. All these solutions
+      will be disallowed for the current round of the minimal specied RedCom FBA.
+    &#34;&#34;&#34;
+    # If given, set the target reaction to the given flux value
+    # TODO: Change to yield
+    model = copy.deepcopy(model)
+    if target_reaction_id != &#34;&#34;:
+        model.reactions.get_by_id(target_reaction_id).lower_bound = target_reaction_value
+        model.reactions.get_by_id(target_reaction_id).upper_bound = target_reaction_value
+
+    # Set fraction and species constraints
+    community_biomass_metabolite = model.metabolites.get_by_id(&#34;community_biomass&#34;)
+    organism_id_biomass_reaction_mapping: Dict[str, str] = {}
+    for reaction in community_biomass_metabolite.reactions:
+        if reaction.id == &#34;COMMUNITY_GROWTH&#34;:
+            continue
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        organism_id_biomass_reaction_mapping[organism_id] = reaction.id
+
+        species_variable =\
+            model.problem.Variable(
+                name=organism_id+&#34;_integer&#34;,
+                lb=0,
+                ub=1,
+                type=&#34;integer&#34;
+            )
+        model.add_cons_vars(species_variable)
+
+        fraction_variable =\
+            model.problem.Variable(
+                name=organism_id,
+                lb=0.0,
+                ub=1.0
+            )
+        model.add_cons_vars(fraction_variable)
+        variable_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - species_variable*fixed_growth_rate,
+            lb=0.0,
+            ub=0.0
+        )
+        model.add_cons_vars(variable_constraint)
+
+        species_constraint = model.problem.Constraint(
+            species_variable - fraction_variable,
+            lb=0.0,
+            ub=1.0
+        )
+        model.add_cons_vars(species_constraint)
+
+    # Split all organism-specific reactions to irreversible reactions
+    # in order to be able to set the fraction variable
+    model = split_reversible_organism_reactions(model, organism_id_biomass_reaction_mapping)
+    #
+    for reaction in model.reactions:
+        # In some models, the upper bound is set to &#34;inf&#34;. Since this can cause trouble with some
+        # solvers, it is changed to 1000 here.
+        if reaction.upper_bound &gt; 1000:
+            reaction.upper_bound = 1000
+
+        # Retrieve the reaction&#39;s organism ID
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Set lower bound constraint with fraction variable
+        original_lower_bound = reaction.lower_bound
+        reaction.lower_bound = 0
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - original_lower_bound*fraction_variable,
+            name=reaction.id+&#34;_lower_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+        # Set upper bound constraint with fraction variable
+        original_upper_bound = reaction.upper_bound
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            original_upper_bound*fraction_variable - model.reactions.get_by_id(reaction.id).flux_expression,
+            name=reaction.id+&#34;_upper_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+    organism_ids = list(organism_id_biomass_reaction_mapping.keys())
+    fraction_summation = model.variables[organism_ids[0]]
+    for organism_id in organism_ids[1:]:
+        fraction_summation += model.variables[organism_id]
+    fraction_sum_constraint = model.problem.Constraint(
+        -1.0 + fraction_summation,
+        name=&#34;fraction_sum_equal_one&#34;,
+        lb=0,
+        ub=0
+    )
+    model.add_cons_vars(fraction_sum_constraint)
+
+    # Set previous result constraints
+    for previous_solution in previous_solutions:
+        organism_ids = list(previous_solution.keys())
+        if len(organism_ids) == 0:
+            continue
+
+        first_organism = organism_ids[0]
+        variable = model.variables[first_organism+&#34;_integer&#34;]
+        integer_cut = previous_solution[first_organism] * variable
+        integer_cut += (-1) * variable
+        if len(organism_ids) &gt; 1:
+            for organism_id in organism_ids[1:]:
+                variable = model.variables[organism_id+&#34;_integer&#34;]
+                integer_cut += previous_solution[organism_id] * variable
+                integer_cut += (-1) * variable
+
+    if len(previous_solutions) &gt; 0:
+        fraction_sum_constraint = model.problem.Constraint(
+            integer_cut,
+            name=&#34;integer_cut_previous_solutions&#34;,
+            ub=-1
+        )
+        model.add_cons_vars([fraction_sum_constraint])
+
+    # Set growth rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).lower_bound = fixed_growth_rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).upper_bound = fixed_growth_rate
+
+    # Set minimal organism count objective
+    organism_variable_summation = model.variables[organism_ids[0]+&#34;_integer&#34;]
+    for organism_id in organism_ids[1:]:
+        organism_variable_summation += model.variables[organism_id+&#34;_integer&#34;]
+    organism_objective = model.problem.Objective(
+        organism_variable_summation,
+        direction=&#34;min&#34;
+    )
+    model.objective = organism_objective
+
+    # Perform FBA :D
+    return community_model_fba_summary(model, optimization_title=&#34;REDCOM FBA&#34;)
+
+
+def redcom_fba(model: cobra.Model, fixed_growth_rate: float) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Run a linearized RedCom FBA.
+
+    Description
+    ----------
+    Performs the RedCom FBA as described in (Koch et al., 2019; see reference section in the module&#39;s main
+    description).
+
+    Return values
+    ----------
+    The same 2 values as this module&#39;s community_model_fba_summary()
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The RedCom-based cobrapy community model.
+    * fixed_growth_rate: float ~ The fixed growth rate of the whole community.
+    &#34;&#34;&#34;
+    model = copy.deepcopy(model)
+    community_biomass_metabolite = model.metabolites.get_by_id(&#34;community_biomass&#34;)
+
+    # Set fraction constraints
+    organism_id_biomass_reaction_mapping: Dict[str, str] = {}
+    for reaction in community_biomass_metabolite.reactions:
+        if reaction.id == &#34;COMMUNITY_GROWTH&#34;:
+            continue
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        organism_id_biomass_reaction_mapping[organism_id] = reaction.id
+
+        fraction_variable =\
+            model.problem.Variable(
+                name=organism_id,
+                lb=0.0,
+                ub=1.0
+            )
+        model.add_cons_vars(fraction_variable)
+        variable_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - model.variables[organism_id]*fixed_growth_rate,
+            lb=0.0,
+            ub=0.0
+        )
+        model.add_cons_vars(variable_constraint)
+
+    model = split_reversible_organism_reactions(model, organism_id_biomass_reaction_mapping)
+    # In some models, the upper bound is set to &#34;inf&#34;. Since this can cause trouble with some
+    # solvers, it is changed to 1000 here.
+    for reaction in model.reactions:
+        if reaction.upper_bound &gt; 1000:
+            reaction.upper_bound = 1000
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Lower bound fraction variable constraint
+        original_lower_bound = reaction.lower_bound
+        reaction.lower_bound = 0
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - original_lower_bound*fraction_variable,
+            name=reaction.id+&#34;_lower_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+        # Upper bound fraction variable constraint
+        original_upper_bound = reaction.upper_bound
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            original_upper_bound*fraction_variable - model.reactions.get_by_id(reaction.id).flux_expression,
+            name=reaction.id+&#34;_upper_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+    # Fraction summation constraint
+    organism_ids = list(organism_id_biomass_reaction_mapping.keys())
+    fraction_summation = model.variables[organism_ids[0]]
+    for organism_id in organism_ids[1:]:
+        fraction_summation += model.variables[organism_id]
+    fraction_sum_constraint = model.problem.Constraint(
+        -1.0 + fraction_summation,
+        name=&#34;fraction_sum_equal_one&#34;,
+        lb=0,
+        ub=0
+    )
+    model.add_cons_vars(fraction_sum_constraint)
+
+    # Set growth rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).lower_bound = fixed_growth_rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).upper_bound = fixed_growth_rate
+
+    # Perform FBA :D
+    return community_model_fba_summary(model, optimization_title=&#34;MINIMAL SPECIES REDCOM FBA&#34;)
+
+
+def split_reversible_organism_reactions(model: cobra.Model, organism_id_biomass_reaction_mapping: Dict[str, str]) -&gt; cobra.Model:
+    &#34;&#34;&#34;Splits all reversible reactions of a RedCom community model which do not contain exchange compartment metabolites.
+
+    Description
+    ----------
+    This function returns a model in which all organismic reversible reactions (i.e., minimal flux &lt; 0) are split into non-reversible
+    &#34;forward&#34; and &#34;reverse&#34; reactions. An &#34;organismic&#34; reaction is one which occurs without interaction with metabolites of the
+    community&#39;s exchange compartment.
+    E.g., an organismic reaction named &#34;CBD_ecoli&#34; with minimal flux -50 and maximal flux 1000 would be
+    separated into the reactions
+
+    1. CBD_fwd_ecoli with flux range [0;1000] and
+    2. CBD_rev_ecoli with flux range [0;50]
+
+    Return value
+    ----------
+    The modified cobrapy model as cobra.Model instance.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ A pyredcom-generated community cobrapy model.
+    * organism_id_biomass_reaction_mapping: Dict[str, str] ~ A dictionary with the community model&#39;s organism IDs
+      as keys, and the corresponding biomass reaction IDs as values
+    &#34;&#34;&#34;
+    for reaction in model.reactions:
+        # Skip irreversible reactions
+        if reaction.lower_bound &gt;= 0:
+            continue
+        # Skip biomass reactions
+        if reaction.id in organism_id_biomass_reaction_mapping.values():
+            continue
+
+        # Get biomass ID of the reaction using the pyredcom standard naming scheme
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        # Skip reaction if it is not part of the organisms (i.e., it is either an ignored
+        # organism or part of the exchange compartment)
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Create new reaction as described in main comment
+        new_reaction = copy.deepcopy(reaction)
+        original_lower_bound = reaction.lower_bound
+        reaction_id_split = reaction.id.split(&#34;_&#34;)
+        reaction.id = &#34;_&#34;.join(reaction_id_split[:-1]) + &#34;_fwd_&#34; + reaction_id_split[-1]
+        new_reaction.id = &#34;_&#34;.join(reaction_id_split[:-1]) + &#34;_rev_&#34; + reaction_id_split[-1]
+        reaction.lower_bound = 0
+        new_reaction.lower_bound = 0
+        new_reaction.upper_bound = -original_lower_bound
+
+        # Reverse direction of products and educts in reverse reaction
+        new_reaction_metabolites_copy = copy.deepcopy(new_reaction.metabolites)
+        for key in list(new_reaction_metabolites_copy.keys()):
+            new_reaction_metabolites_copy[key] *= -2
+
+        # Add new reaction to model
+        new_reaction.add_metabolites(new_reaction_metabolites_copy)
+        model.add_reactions([new_reaction])
+
+    return model</code></pre>
+</details>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="pyredcom.community_model_fba_summary"><code class="name flex">
+<span>def <span class="ident">community_model_fba_summary</span></span>(<span>model, exchange_reaction_id_prefix='EX_C_', optimization_title='FBA')</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Performs an FBA (or any kind of modified optimization) on a pyredcom-generated community model and prints the results.</p>
+<h2 id="description">Description</h2>
+<p>The model-described optimization problem is solved using cobrapy.Model's optimize() function. Then,
+the in and out fluxes of the whole community (i.e., what the community takes and secretes) are printed,
+as well as the species-internal in and out fluxes and the occurring species.</p>
+<h2 id="return-values">Return values</h2>
+<p>Two values are returned:</p>
+<ol>
+<li>A cobra.Solution instance containing the FBA solution. This instance can be used as
+any other cobrapy FBA result.</li>
+<li>A listed (i.e., put into []) dictionary containing the occurrence or non-occurrence of species in the
+calculated optimization solution. E.g., if a species with the community ID "ecoli" occurs with growth
+in the solution and another community species calles "vnat" does not occur in it, the resulting value
+would be [{"ecoli1": 1, "vnat": 0}]. "1" stands for "occurrence", "0" for "non-occurrence".</li>
+</ol>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The pyredcom-generated RedCom community model as cobrapy Model instance.</li>
+<li>exchange_reaction_id_prefix: str = "EX_C_" ~ The exchange reaction ID prefix as given during the
+generation of the model's Community instance.</li>
+<li>optimization_title: str = "FBA"~ Will be printed at the beginning of the FBA summary as
+f"==SUMMARY OF {optimization_title} RESULT=="</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def community_model_fba_summary(model: cobra.Model, exchange_reaction_id_prefix: str = &#34;EX_C_&#34;,
+                                optimization_title: str = &#34;FBA&#34;) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Performs an FBA (or any kind of modified optimization) on a pyredcom-generated community model and prints the results.
+
+    Description
+    ----------
+    The model-described optimization problem is solved using cobrapy.Model&#39;s optimize() function. Then,
+    the in and out fluxes of the whole community (i.e., what the community takes and secretes) are printed,
+    as well as the species-internal in and out fluxes and the occurring species.
+
+
+    Return values
+    ----------
+    Two values are returned:
+
+    1. A cobra.Solution instance containing the FBA solution. This instance can be used as
+       any other cobrapy FBA result.
+    2. A listed (i.e., put into []) dictionary containing the occurrence or non-occurrence of species in the
+       calculated optimization solution. E.g., if a species with the community ID &#34;ecoli&#34; occurs with growth
+       in the solution and another community species calles &#34;vnat&#34; does not occur in it, the resulting value
+       would be [{&#34;ecoli1&#34;: 1, &#34;vnat&#34;: 0}]. &#34;1&#34; stands for &#34;occurrence&#34;, &#34;0&#34; for &#34;non-occurrence&#34;.
+
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The pyredcom-generated RedCom community model as cobrapy Model instance.
+    * exchange_reaction_id_prefix: str = &#34;EX_C_&#34; ~ The exchange reaction ID prefix as given during the
+      generation of the model&#39;s Community instance.
+    * optimization_title: str = &#34;FBA&#34;~ Will be printed at the beginning of the FBA summary as
+      f&#34;==SUMMARY OF {optimization_title} RESULT==&#34;
+    &#34;&#34;&#34;
+    # Optimize for the model&#39;s given optimization problem :D
+    fba_solution = model.optimize()
+
+    # Get community in and out fluxes text
+    community_exchange_reaction_ids = [x.id for x in model.reactions if x.id.startswith(exchange_reaction_id_prefix)]
+    community_in_fluxes = &#34;COMMUNITY IN FLUXES:&#34;
+    community_out_fluxes = &#34;\nCOMMUNITY OUT FLUXES:&#34;
+    for exchange_reaction_id in community_exchange_reaction_ids:
+        flux = round(fba_solution.fluxes[exchange_reaction_id], 3)
+        description = &#34;\n&#34; + exchange_reaction_id.replace(exchange_reaction_id_prefix, &#34;&#34;) + &#34;: &#34; + str(flux)
+        if flux &lt; 0:
+            community_in_fluxes += description
+        elif flux &gt; 0:
+            community_out_fluxes += description
+
+    # Get sepecies-internal in and out fluxes text
+    species_exchange_reaction_ids = [x.id for x in model.reactions if x.id.startswith(&#34;EXCHG_&#34;)]
+    species_in_fluxes = &#34;\nSPECIES-INTERNAL IN FLUXES:&#34;
+    species_out_fluxes = &#34;\nSPECIES-INTERNAL OUT FLUXES:&#34;
+    active_organisms: List[str] = []
+    inactive_organisms: List[str] = []
+    for exchange_reaction_id in species_exchange_reaction_ids:
+        flux = round(fba_solution.fluxes[exchange_reaction_id], 3)
+        description = &#34;\n&#34; + exchange_reaction_id.replace(&#34;EXCHG_&#34;, &#34;&#34;) + &#34;: &#34; + str(flux)
+        if flux &lt; 0:
+            species_in_fluxes += description
+            active_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+        elif flux &gt; 0:
+            species_out_fluxes += description
+            active_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+        else:
+            inactive_organisms.append(exchange_reaction_id.split(&#34;_&#34;)[1])
+    active_organisms = list(set(active_organisms))
+    inactive_organisms = list(set(inactive_organisms))
+
+    # Get objective solution text
+    objective = f&#34;\nObjective {str(model.objective.expression)} has the value...\n{str(fba_solution.objective_value)}&#34;
+
+    # Create organism activity dictionary and corresponding output text
+    organism_occurence_dictionary: Dict[str, int] = {}
+    active_organisms_text = f&#34;\nActive organisms: &#34;
+    inactive_organisms_text = f&#34;\nInactive organisms: &#34;
+    for active_organism in active_organisms:
+        organism_occurence_dictionary[active_organism] = 1
+        active_organisms_text += &#34;\n* &#34; + active_organism
+    for inactive_organism in inactive_organisms:
+        if inactive_organism not in organism_occurence_dictionary.keys():
+            organism_occurence_dictionary[inactive_organism] = 0
+            inactive_organisms_text += &#34;\n* &#34; + inactive_organism
+
+    # Print the optimization results :D
+    print(f&#34;===SUMMARY OF {optimization_title}===&#34;)
+    print(community_in_fluxes)
+    print(community_out_fluxes)
+    print(species_in_fluxes)
+    print(species_out_fluxes)
+    print(objective)
+    print(active_organisms_text)
+    print(inactive_organisms_text)
+
+    return fba_solution, [organism_occurence_dictionary]</code></pre>
+</details>
+</dd>
+<dt id="pyredcom.generate_community_cobra_model"><code class="name flex">
+<span>def <span class="ident">generate_community_cobra_model</span></span>(<span>community)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Creates a RedCom community cobrapy model from a pyredcom Community instance.</p>
+<h2 id="description">Description</h2>
+<p>This functions uses all the extra information that is given to the Community
+instance's member variables - and its SingleModel member variables - in order
+to generate a community model with an exchange compartment, species-specific
+exchange reactions as well as community-wide exchange reactions.</p>
+<h2 id="return-value">Return value</h2>
+<p>A community model (according to the RedCom method) in the form of a cobrapy
+Model instance.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>community: Community ~ The Community instance describing the total community.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def generate_community_cobra_model(community: Community) -&gt; cobra.Model:
+    &#34;&#34;&#34;Creates a RedCom community cobrapy model from a pyredcom Community instance.
+
+    Description
+    ----------
+    This functions uses all the extra information that is given to the Community
+    instance&#39;s member variables - and its SingleModel member variables - in order
+    to generate a community model with an exchange compartment, species-specific
+    exchange reactions as well as community-wide exchange reactions.
+
+    Return value
+    ----------
+    A community model (according to the RedCom method) in the form of a cobrapy
+    Model instance.
+
+    Arguments
+    ----------
+    * community: Community ~ The Community instance describing the total community.
+    &#34;&#34;&#34;
+    # Check that an actual community is given
+    if len(community.single_models) &lt;= 1:
+        print(&#34;ERROR: Less than 2 models in given Community instance!&#34;)
+        return
+
+    # Check that no underscores are in the organism IDs
+    for single_model in community.single_models:
+        if &#34;_&#34; in single_model.species_abbreviation:
+            print(f&#34;ERROR: Underscore in the given species abbreviation {single_model.species_abbreviation} D:&#34;)
+            return
+
+    for single_model in community.single_models:
+        # Check for exchange reactions with standard name
+        exchange_reaction_ids = [x.id for x in single_model.cobra_model.reactions
+                                 if x.id.startswith(single_model.exchange_reaction_id_prefix)]
+        for exchange_reaction_id in exchange_reaction_ids:
+            reaction = single_model.cobra_model.reactions.get_by_id(exchange_reaction_id)
+            reaction.lower_bound = 0
+            reaction.upper_bound = 0
+
+        # Rename metabolites
+        for metabolite in single_model.cobra_model.metabolites:
+            metabolite.id += &#34;_&#34; + single_model.species_abbreviation
+
+        # Rename reactions
+        for reaction in single_model.cobra_model.reactions:
+            reaction.id += &#34;_&#34; + single_model.species_abbreviation
+
+    # Merge models
+    merged_cobra_model = copy.deepcopy(community.single_models[0].cobra_model)
+    for single_model in community.single_models[1:]:
+        merged_cobra_model.merge(single_model.cobra_model, inplace=True)
+
+    # Create exchange compartment
+    merged_cobra_model.compartments[community.exchange_compartment_id] = &#34;Exchange compartment&#34;
+    for single_model in community.single_models:
+        for model_metabolite_id in single_model.model_metabolite_to_exchange_id_mapping.keys():
+            community_model_metabolite_id = model_metabolite_id + &#34;_&#34; + single_model.species_abbreviation
+            community_model_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_metabolite_id)
+
+            exchange_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[model_metabolite_id]
+            community_model_exchange_metabolite_id = exchange_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+            community_model_metabolite_ids = [x.id for x in merged_cobra_model.metabolites]
+            if community_model_exchange_metabolite_id in community_model_metabolite_ids:
+                exchange_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_exchange_metabolite_id)
+            else:
+                exchange_metabolite = cobra.Metabolite(
+                    id=exchange_metabolite_id+&#34;_&#34;+community.exchange_compartment_id,
+                    compartment=community.exchange_compartment_id
+                )
+
+            exchange_reaction_id = &#34;EXCHG_&#34;+single_model.species_abbreviation+&#34;_&#34;+model_metabolite_id+&#34;_to_&#34;+exchange_metabolite_id
+            exchange_reaction = cobra.Reaction(id=exchange_reaction_id)
+            if model_metabolite_id in single_model.input_metabolite_ids:
+                exchange_reaction.lower_bound = -1000
+                if model_metabolite_id in single_model.output_metabolite_ids:
+                    exchange_reaction.upper_bound = 1000
+                else:
+                    exchange_reaction.upper_bound = 0
+            elif model_metabolite_id in single_model.input_metabolite_ids:
+                exchange_reaction.lower_bound = 0
+                exchange_reaction.upper_bound = 1000
+            exchange_reaction.add_metabolites({
+                community_model_metabolite: -1,
+                exchange_metabolite: 1
+            })
+            merged_cobra_model.add_reactions([exchange_reaction])
+
+    # Input metabolites
+    for input_metabolite_id in community.input_metabolite_ids:
+        community_model_metabolite = merged_cobra_model.metabolites.get_by_id(input_metabolite_id+&#34;_&#34;+community.exchange_compartment_id)
+        input_reaction = cobra.Reaction(
+            id=community.exchange_reaction_id_prefix+input_metabolite_id+&#34;_&#34;+community.exchange_compartment_id,
+            lower_bound=-1000,
+            upper_bound=0
+        )
+        input_reaction.add_metabolites({
+            community_model_metabolite: -1,
+        })
+        merged_cobra_model.add_reactions([input_reaction])
+
+    # Output metabolites
+    for output_metabolite_id in community.output_metabolite_ids:
+        community_model_metabolite_id = output_metabolite_id + &#34;_&#34; + community.exchange_compartment_id
+        community_model_metabolite = merged_cobra_model.metabolites.get_by_id(community_model_metabolite_id)
+        output_reaction_id = community.exchange_reaction_id_prefix+output_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+        community_model_reaction_ids = [x.id for x in merged_cobra_model.reactions]
+        if output_reaction_id in community_model_reaction_ids:
+            reaction = merged_cobra_model.reactions.get_by_id(output_reaction_id)
+            reaction.upper_bound = 1000
+        else:
+            output_reaction = cobra.Reaction(
+                id=output_reaction_id,
+                lower_bound=0,
+                upper_bound=1000
+            )
+            output_reaction.add_metabolites({
+                community_model_metabolite: -1,
+            })
+            merged_cobra_model.add_reactions([output_reaction])
+
+    # Community biomass metabolite
+    community_biomass_metabolite = cobra.Metabolite(
+        id=&#34;community_biomass&#34;,
+        compartment=community.exchange_compartment_id
+    )
+
+    objective_reaction_ids = [x.objective_reaction_id+&#34;_&#34;+x.species_abbreviation for x in community.single_models]
+    for objective_reaction_id in objective_reaction_ids:
+        objective_reaction = merged_cobra_model.reactions.get_by_id(objective_reaction_id)
+        objective_reaction.add_metabolites({
+            community_biomass_metabolite: 1
+        })
+
+    # Setting of new objective reaction
+    merged_objective_reaction = cobra.Reaction(
+        id=&#34;COMMUNITY_GROWTH&#34;,
+        lower_bound=0,
+        upper_bound=1000
+    )
+    merged_objective_reaction.add_metabolites({
+        community_biomass_metabolite: -1,
+    })
+    merged_cobra_model.add_reactions([merged_objective_reaction])
+    merged_cobra_model.objective = &#34;COMMUNITY_GROWTH&#34;
+
+    return merged_cobra_model</code></pre>
+</details>
+</dd>
+<dt id="pyredcom.minimal_species_redcom_fba"><code class="name flex">
+<span>def <span class="ident">minimal_species_redcom_fba</span></span>(<span>model, fixed_growth_rate, target_reaction_id='', target_reaction_value=0.0, previous_solutions=[])</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Performs a minimal species RedCom FBA with the given model and - optionally - the given target reaction flux.</p>
+<h2 id="description">Description</h2>
+<p>This function changes the RedCom FBA's objective by searching a solution for which the <em>minimal</em> amount of
+species is needed in order to fulfill the given community growth rate and - optionally - the target reaction flux.</p>
+<p>The whole optimization process is called the "minimal species RedCom FBA" and is defined as a MILP using optlang.
+In comparison to the original RedCom FBA formulation (Koch et al., 2019)</p>
+<h2 id="return-values">Return values</h2>
+<p>The same 2 values as this module's community_model_fba_summary(), the following variables and constraints are added:</p>
+<ol>
+<li>For each of the community's organism, an integer variable which can be either 0 or 1 is defined. "0" stands for
+"this organism does <em>not</em> plays a role in the solution", "1" stands for "this organism plays a role in the solution".
+Let us call each of these variables S_s, where "S" stands for "species indicator", and "s" for the specific species
+it is associated to.</li>
+<li>For each S_s, the following new constraint is added: 0 &lt;= S_s - F_s &lt;= 1, where F_s stands for the fraction variable
+of the associated species (see Koch et al., 2019). In other words, if S_s is 0 (i.e., the species does not occur),
+the equation is 0 &lt;= 0 - F_s &lt;= 1. Since F_s is in the range [0;1], the species' fraction F_s must be 0 if S_s
+is also 0 in order to fulfill the newly added constraint.</li>
+<li>The objective function was redefined as the <em>minimization</em> of the sum of all S_s. In other words, the minimal amount
+of species needed in order to fulfill the given constraints is searched.</li>
+</ol>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The pyredcom-generated community cobrapy model.</li>
+<li>fixed_growth_rate: float ~ The fixed grwoth rate for all species of the modelled community.</li>
+<li>target_reaction_id: str = "" ~ A target reaction which can be set to a given value using target_reaction_value.
+Is "" if no target reaction shall be set.</li>
+<li>target_reaction_value: float = 0.0 ~ If target_reaction_id != "", this is the flux value to which the reaction
+will be set.</li>
+<li>previous_solutions: List[Dict[str, int]] = [] ~ A list of previous species solutions. All these solutions
+will be disallowed for the current round of the minimal specied RedCom FBA.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def minimal_species_redcom_fba(model: cobra.Model, fixed_growth_rate: float,
+                               target_reaction_id: str = &#34;&#34;, target_reaction_value: float = 0.0,
+                               previous_solutions: List[Dict[str, int]] = []) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Performs a minimal species RedCom FBA with the given model and - optionally - the given target reaction flux.
+
+    Description
+    ----------
+    This function changes the RedCom FBA&#39;s objective by searching a solution for which the *minimal* amount of
+    species is needed in order to fulfill the given community growth rate and - optionally - the target reaction flux.
+
+    The whole optimization process is called the &#34;minimal species RedCom FBA&#34; and is defined as a MILP using optlang.
+    In comparison to the original RedCom FBA formulation (Koch et al., 2019)
+
+    Return values
+    ----------
+    The same 2 values as this module&#39;s community_model_fba_summary(), the following variables and constraints are added:
+
+    1. For each of the community&#39;s organism, an integer variable which can be either 0 or 1 is defined. &#34;0&#34; stands for
+        &#34;this organism does *not* plays a role in the solution&#34;, &#34;1&#34; stands for &#34;this organism plays a role in the solution&#34;.
+        Let us call each of these variables S_s, where &#34;S&#34; stands for &#34;species indicator&#34;, and &#34;s&#34; for the specific species
+        it is associated to.
+    2. For each S_s, the following new constraint is added: 0 &lt;= S_s - F_s &lt;= 1, where F_s stands for the fraction variable
+       of the associated species (see Koch et al., 2019). In other words, if S_s is 0 (i.e., the species does not occur),
+       the equation is 0 &lt;= 0 - F_s &lt;= 1. Since F_s is in the range [0;1], the species&#39; fraction F_s must be 0 if S_s
+       is also 0 in order to fulfill the newly added constraint.
+    3. The objective function was redefined as the *minimization* of the sum of all S_s. In other words, the minimal amount
+       of species needed in order to fulfill the given constraints is searched.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The pyredcom-generated community cobrapy model.
+    * fixed_growth_rate: float ~ The fixed grwoth rate for all species of the modelled community.
+    * target_reaction_id: str = &#34;&#34; ~ A target reaction which can be set to a given value using target_reaction_value.
+      Is &#34;&#34; if no target reaction shall be set.
+    * target_reaction_value: float = 0.0 ~ If target_reaction_id != &#34;&#34;, this is the flux value to which the reaction
+      will be set.
+    * previous_solutions: List[Dict[str, int]] = [] ~ A list of previous species solutions. All these solutions
+      will be disallowed for the current round of the minimal specied RedCom FBA.
+    &#34;&#34;&#34;
+    # If given, set the target reaction to the given flux value
+    # TODO: Change to yield
+    model = copy.deepcopy(model)
+    if target_reaction_id != &#34;&#34;:
+        model.reactions.get_by_id(target_reaction_id).lower_bound = target_reaction_value
+        model.reactions.get_by_id(target_reaction_id).upper_bound = target_reaction_value
+
+    # Set fraction and species constraints
+    community_biomass_metabolite = model.metabolites.get_by_id(&#34;community_biomass&#34;)
+    organism_id_biomass_reaction_mapping: Dict[str, str] = {}
+    for reaction in community_biomass_metabolite.reactions:
+        if reaction.id == &#34;COMMUNITY_GROWTH&#34;:
+            continue
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        organism_id_biomass_reaction_mapping[organism_id] = reaction.id
+
+        species_variable =\
+            model.problem.Variable(
+                name=organism_id+&#34;_integer&#34;,
+                lb=0,
+                ub=1,
+                type=&#34;integer&#34;
+            )
+        model.add_cons_vars(species_variable)
+
+        fraction_variable =\
+            model.problem.Variable(
+                name=organism_id,
+                lb=0.0,
+                ub=1.0
+            )
+        model.add_cons_vars(fraction_variable)
+        variable_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - species_variable*fixed_growth_rate,
+            lb=0.0,
+            ub=0.0
+        )
+        model.add_cons_vars(variable_constraint)
+
+        species_constraint = model.problem.Constraint(
+            species_variable - fraction_variable,
+            lb=0.0,
+            ub=1.0
+        )
+        model.add_cons_vars(species_constraint)
+
+    # Split all organism-specific reactions to irreversible reactions
+    # in order to be able to set the fraction variable
+    model = split_reversible_organism_reactions(model, organism_id_biomass_reaction_mapping)
+    #
+    for reaction in model.reactions:
+        # In some models, the upper bound is set to &#34;inf&#34;. Since this can cause trouble with some
+        # solvers, it is changed to 1000 here.
+        if reaction.upper_bound &gt; 1000:
+            reaction.upper_bound = 1000
+
+        # Retrieve the reaction&#39;s organism ID
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Set lower bound constraint with fraction variable
+        original_lower_bound = reaction.lower_bound
+        reaction.lower_bound = 0
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - original_lower_bound*fraction_variable,
+            name=reaction.id+&#34;_lower_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+        # Set upper bound constraint with fraction variable
+        original_upper_bound = reaction.upper_bound
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            original_upper_bound*fraction_variable - model.reactions.get_by_id(reaction.id).flux_expression,
+            name=reaction.id+&#34;_upper_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+    organism_ids = list(organism_id_biomass_reaction_mapping.keys())
+    fraction_summation = model.variables[organism_ids[0]]
+    for organism_id in organism_ids[1:]:
+        fraction_summation += model.variables[organism_id]
+    fraction_sum_constraint = model.problem.Constraint(
+        -1.0 + fraction_summation,
+        name=&#34;fraction_sum_equal_one&#34;,
+        lb=0,
+        ub=0
+    )
+    model.add_cons_vars(fraction_sum_constraint)
+
+    # Set previous result constraints
+    for previous_solution in previous_solutions:
+        organism_ids = list(previous_solution.keys())
+        if len(organism_ids) == 0:
+            continue
+
+        first_organism = organism_ids[0]
+        variable = model.variables[first_organism+&#34;_integer&#34;]
+        integer_cut = previous_solution[first_organism] * variable
+        integer_cut += (-1) * variable
+        if len(organism_ids) &gt; 1:
+            for organism_id in organism_ids[1:]:
+                variable = model.variables[organism_id+&#34;_integer&#34;]
+                integer_cut += previous_solution[organism_id] * variable
+                integer_cut += (-1) * variable
+
+    if len(previous_solutions) &gt; 0:
+        fraction_sum_constraint = model.problem.Constraint(
+            integer_cut,
+            name=&#34;integer_cut_previous_solutions&#34;,
+            ub=-1
+        )
+        model.add_cons_vars([fraction_sum_constraint])
+
+    # Set growth rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).lower_bound = fixed_growth_rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).upper_bound = fixed_growth_rate
+
+    # Set minimal organism count objective
+    organism_variable_summation = model.variables[organism_ids[0]+&#34;_integer&#34;]
+    for organism_id in organism_ids[1:]:
+        organism_variable_summation += model.variables[organism_id+&#34;_integer&#34;]
+    organism_objective = model.problem.Objective(
+        organism_variable_summation,
+        direction=&#34;min&#34;
+    )
+    model.objective = organism_objective
+
+    # Perform FBA :D
+    return community_model_fba_summary(model, optimization_title=&#34;REDCOM FBA&#34;)</code></pre>
+</details>
+</dd>
+<dt id="pyredcom.redcom_fba"><code class="name flex">
+<span>def <span class="ident">redcom_fba</span></span>(<span>model, fixed_growth_rate)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Run a linearized RedCom FBA.</p>
+<h2 id="description">Description</h2>
+<p>Performs the RedCom FBA as described in (Koch et al., 2019; see reference section in the module's main
+description).</p>
+<h2 id="return-values">Return values</h2>
+<p>The same 2 values as this module's community_model_fba_summary()</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ The RedCom-based cobrapy community model.</li>
+<li>fixed_growth_rate: float ~ The fixed growth rate of the whole community.</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def redcom_fba(model: cobra.Model, fixed_growth_rate: float) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
+    &#34;&#34;&#34;Run a linearized RedCom FBA.
+
+    Description
+    ----------
+    Performs the RedCom FBA as described in (Koch et al., 2019; see reference section in the module&#39;s main
+    description).
+
+    Return values
+    ----------
+    The same 2 values as this module&#39;s community_model_fba_summary()
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ The RedCom-based cobrapy community model.
+    * fixed_growth_rate: float ~ The fixed growth rate of the whole community.
+    &#34;&#34;&#34;
+    model = copy.deepcopy(model)
+    community_biomass_metabolite = model.metabolites.get_by_id(&#34;community_biomass&#34;)
+
+    # Set fraction constraints
+    organism_id_biomass_reaction_mapping: Dict[str, str] = {}
+    for reaction in community_biomass_metabolite.reactions:
+        if reaction.id == &#34;COMMUNITY_GROWTH&#34;:
+            continue
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        organism_id_biomass_reaction_mapping[organism_id] = reaction.id
+
+        fraction_variable =\
+            model.problem.Variable(
+                name=organism_id,
+                lb=0.0,
+                ub=1.0
+            )
+        model.add_cons_vars(fraction_variable)
+        variable_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - model.variables[organism_id]*fixed_growth_rate,
+            lb=0.0,
+            ub=0.0
+        )
+        model.add_cons_vars(variable_constraint)
+
+    model = split_reversible_organism_reactions(model, organism_id_biomass_reaction_mapping)
+    # In some models, the upper bound is set to &#34;inf&#34;. Since this can cause trouble with some
+    # solvers, it is changed to 1000 here.
+    for reaction in model.reactions:
+        if reaction.upper_bound &gt; 1000:
+            reaction.upper_bound = 1000
+
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Lower bound fraction variable constraint
+        original_lower_bound = reaction.lower_bound
+        reaction.lower_bound = 0
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            model.reactions.get_by_id(reaction.id).flux_expression - original_lower_bound*fraction_variable,
+            name=reaction.id+&#34;_lower_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+        # Upper bound fraction variable constraint
+        original_upper_bound = reaction.upper_bound
+        fraction_variable = model.variables[organism_id]
+        fraction_constraint = model.problem.Constraint(
+            original_upper_bound*fraction_variable - model.reactions.get_by_id(reaction.id).flux_expression,
+            name=reaction.id+&#34;_upper_bound_with_fraction_variable&#34;,
+            lb=0,
+            ub=2000
+        )
+        model.add_cons_vars(fraction_constraint)
+
+    # Fraction summation constraint
+    organism_ids = list(organism_id_biomass_reaction_mapping.keys())
+    fraction_summation = model.variables[organism_ids[0]]
+    for organism_id in organism_ids[1:]:
+        fraction_summation += model.variables[organism_id]
+    fraction_sum_constraint = model.problem.Constraint(
+        -1.0 + fraction_summation,
+        name=&#34;fraction_sum_equal_one&#34;,
+        lb=0,
+        ub=0
+    )
+    model.add_cons_vars(fraction_sum_constraint)
+
+    # Set growth rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).lower_bound = fixed_growth_rate
+    model.reactions.get_by_id(&#34;COMMUNITY_GROWTH&#34;).upper_bound = fixed_growth_rate
+
+    # Perform FBA :D
+    return community_model_fba_summary(model, optimization_title=&#34;MINIMAL SPECIES REDCOM FBA&#34;)</code></pre>
+</details>
+</dd>
+<dt id="pyredcom.split_reversible_organism_reactions"><code class="name flex">
+<span>def <span class="ident">split_reversible_organism_reactions</span></span>(<span>model, organism_id_biomass_reaction_mapping)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Splits all reversible reactions of a RedCom community model which do not contain exchange compartment metabolites.</p>
+<h2 id="description">Description</h2>
+<p>This function returns a model in which all organismic reversible reactions (i.e., minimal flux &lt; 0) are split into non-reversible
+"forward" and "reverse" reactions. An "organismic" reaction is one which occurs without interaction with metabolites of the
+community's exchange compartment.
+E.g., an organismic reaction named "CBD_ecoli" with minimal flux -50 and maximal flux 1000 would be
+separated into the reactions</p>
+<ol>
+<li>CBD_fwd_ecoli with flux range [0;1000] and</li>
+<li>CBD_rev_ecoli with flux range [0;50]</li>
+</ol>
+<h2 id="return-value">Return value</h2>
+<p>The modified cobrapy model as cobra.Model instance.</p>
+<h2 id="arguments">Arguments</h2>
+<ul>
+<li>model: cobra.Model ~ A pyredcom-generated community cobrapy model.</li>
+<li>organism_id_biomass_reaction_mapping: Dict[str, str] ~ A dictionary with the community model's organism IDs
+as keys, and the corresponding biomass reaction IDs as values</li>
+</ul></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def split_reversible_organism_reactions(model: cobra.Model, organism_id_biomass_reaction_mapping: Dict[str, str]) -&gt; cobra.Model:
+    &#34;&#34;&#34;Splits all reversible reactions of a RedCom community model which do not contain exchange compartment metabolites.
+
+    Description
+    ----------
+    This function returns a model in which all organismic reversible reactions (i.e., minimal flux &lt; 0) are split into non-reversible
+    &#34;forward&#34; and &#34;reverse&#34; reactions. An &#34;organismic&#34; reaction is one which occurs without interaction with metabolites of the
+    community&#39;s exchange compartment.
+    E.g., an organismic reaction named &#34;CBD_ecoli&#34; with minimal flux -50 and maximal flux 1000 would be
+    separated into the reactions
+
+    1. CBD_fwd_ecoli with flux range [0;1000] and
+    2. CBD_rev_ecoli with flux range [0;50]
+
+    Return value
+    ----------
+    The modified cobrapy model as cobra.Model instance.
+
+    Arguments
+    ----------
+    * model: cobra.Model ~ A pyredcom-generated community cobrapy model.
+    * organism_id_biomass_reaction_mapping: Dict[str, str] ~ A dictionary with the community model&#39;s organism IDs
+      as keys, and the corresponding biomass reaction IDs as values
+    &#34;&#34;&#34;
+    for reaction in model.reactions:
+        # Skip irreversible reactions
+        if reaction.lower_bound &gt;= 0:
+            continue
+        # Skip biomass reactions
+        if reaction.id in organism_id_biomass_reaction_mapping.values():
+            continue
+
+        # Get biomass ID of the reaction using the pyredcom standard naming scheme
+        organism_id = reaction.id.split(&#34;_&#34;)[-1]
+        # Skip reaction if it is not part of the organisms (i.e., it is either an ignored
+        # organism or part of the exchange compartment)
+        if organism_id not in organism_id_biomass_reaction_mapping.keys():
+            continue
+
+        # Create new reaction as described in main comment
+        new_reaction = copy.deepcopy(reaction)
+        original_lower_bound = reaction.lower_bound
+        reaction_id_split = reaction.id.split(&#34;_&#34;)
+        reaction.id = &#34;_&#34;.join(reaction_id_split[:-1]) + &#34;_fwd_&#34; + reaction_id_split[-1]
+        new_reaction.id = &#34;_&#34;.join(reaction_id_split[:-1]) + &#34;_rev_&#34; + reaction_id_split[-1]
+        reaction.lower_bound = 0
+        new_reaction.lower_bound = 0
+        new_reaction.upper_bound = -original_lower_bound
+
+        # Reverse direction of products and educts in reverse reaction
+        new_reaction_metabolites_copy = copy.deepcopy(new_reaction.metabolites)
+        for key in list(new_reaction_metabolites_copy.keys()):
+            new_reaction_metabolites_copy[key] *= -2
+
+        # Add new reaction to model
+        new_reaction.add_metabolites(new_reaction_metabolites_copy)
+        model.add_reactions([new_reaction])
+
+    return model</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="pyredcom.Community"><code class="flex name class">
+<span>class <span class="ident">Community</span></span>
+<span>(</span><span>single_models, exchange_compartment_id, exchange_reaction_id_prefix, input_metabolite_ids, output_metabolite_ids)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Dataclass for the definition of a community of SingleModel instances.</p>
+<h2 id="description">Description</h2>
+<p>An instance of Community contains single SingleModel instances which describe
+the single-organism constituents of the community. In addition, it contains
+information of the community's exchange compartment and what is allowed for
+uptake and intake with the community.</p>
+<h2 id="use-case">Use case</h2>
+<p>In pyredcom, Community instances are directly used in order to create a
+community model according to the RedCom method.</p>
+<h2 id="member-variables">Member variables</h2>
+<ul>
+<li>single_models: List[SingleModel] ~ The list of single models which shall be
+merged into a RedCom community model.</li>
+<li>exchange_compartment_id: str ~ The name extension of the RedCom-analogous
+exchange compartment metabolites. One common name would be "_exchg".</li>
+<li>exchange_reaction_id_prefix: str ~ The prefix for the community's (not the
+single organisms's) exhange reactions, i.e. the metabolites that the
+community can have as intake or outtake. One common prefix would be
+"EX_C_" (where the "C_" stands for community :-).</li>
+<li>input_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+metabolites which can be taken as input by the community. This list of IDs must not contain
+the exchange_compartment_id.</li>
+<li>output_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+metabolites which can be secreted by the community. This list of IDs must not contain
+the exchange_compartment_id.</li>
+</ul>
+<h2 id="usage-example">Usage example</h2>
+<p>Suppose we want to create a community of two core models - one from <em>Escherichia coli</em> and
+one from <em>Vibrio natriegens</em> - and we want to name the exchange compartment "exchg" and
+set the prefix of the community's exchange metabolites to "EX_C" and <em>E. coli</em> has the
+input metabolites glc__D, o2, h and h2o, and <em>V. natriegens</em> the additional input
+metabolite biotin, and both habe the output metabolites ac and co2,
+then we could set the Community instance as follows:
+<pre>
+community_example = Community(
+    single_models = [ecoli_core, vnatriegens_core],
+    exchange_compartment_id = "exchg",
+    exchange_reaction_id_prefix = "EX_C",
+    input_metabolite_ids = ["glc__D", "o2", "h", "h2o", "ac", "biotin"],
+    output_metabolite_ids = ["ac", "co2"]
+)
+</pre></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class Community:
+    &#34;&#34;&#34;Dataclass for the definition of a community of SingleModel instances.
+
+    Description
+    ----------
+    An instance of Community contains single SingleModel instances which describe
+    the single-organism constituents of the community. In addition, it contains
+    information of the community&#39;s exchange compartment and what is allowed for
+    uptake and intake with the community.
+
+    Use case
+    ----------
+    In pyredcom, Community instances are directly used in order to create a
+    community model according to the RedCom method.
+
+    Member variables
+    ----------
+    * single_models: List[SingleModel] ~ The list of single models which shall be
+      merged into a RedCom community model.
+    * exchange_compartment_id: str ~ The name extension of the RedCom-analogous
+      exchange compartment metabolites. One common name would be &#34;_exchg&#34;.
+    * exchange_reaction_id_prefix: str ~ The prefix for the community&#39;s (not the
+      single organisms&#39;s) exhange reactions, i.e. the metabolites that the
+      community can have as intake or outtake. One common prefix would be
+      &#34;EX_C_&#34; (where the &#34;C_&#34; stands for community :-).
+    * input_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+      metabolites which can be taken as input by the community. This list of IDs must not contain
+      the exchange_compartment_id.
+    * output_metabolite_ids: List[str] ~ A list of IDs of exchange compartment
+      metabolites which can be secreted by the community. This list of IDs must not contain
+      the exchange_compartment_id.
+
+    Usage example
+    ----------
+    Suppose we want to create a community of two core models - one from *Escherichia coli* and
+    one from *Vibrio natriegens* - and we want to name the exchange compartment &#34;exchg&#34; and
+    set the prefix of the community&#39;s exchange metabolites to &#34;EX_C&#34; and *E. coli* has the
+    input metabolites glc__D, o2, h and h2o, and *V. natriegens* the additional input
+    metabolite biotin, and both habe the output metabolites ac and co2,
+    then we could set the Community instance as follows:
+    &lt;pre&gt;
+    community_example = Community(
+        single_models = [ecoli_core, vnatriegens_core],
+        exchange_compartment_id = &#34;exchg&#34;,
+        exchange_reaction_id_prefix = &#34;EX_C&#34;,
+        input_metabolite_ids = [&#34;glc__D&#34;, &#34;o2&#34;, &#34;h&#34;, &#34;h2o&#34;, &#34;ac&#34;, &#34;biotin&#34;],
+        output_metabolite_ids = [&#34;ac&#34;, &#34;co2&#34;]
+    )
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    single_models: List[SingleModel]
+    exchange_compartment_id: str
+    exchange_reaction_id_prefix: str
+    input_metabolite_ids: List[str]
+    output_metabolite_ids: List[str]</code></pre>
+</details>
+</dd>
+<dt id="pyredcom.SingleModel"><code class="flex name class">
+<span>class <span class="ident">SingleModel</span></span>
+<span>(</span><span>cobra_model, species_abbreviation, objective_reaction_id, exchange_reaction_id_prefix, input_metabolite_ids, output_metabolite_ids, model_metabolite_to_exchange_id_mapping)</span>
+</code></dt>
+<dd>
+<section class="desc"><p>Dataclass for the description of a single cobra model.</p>
+<h2 id="description">Description</h2>
+<p>An instance of this dataclass contains a cobrapy model itself,
+as well as additional information regarding its objective and
+its inputs and outputs.</p>
+<h2 id="use-case">Use case</h2>
+<p>In pyredcom, SingleModel instances are intended to be used
+within Community instances. The additional information of SingleModel
+instances is then used for the generation of the actual community model.</p>
+<h2 id="member-variables">Member variables</h2>
+<ul>
+<li>cobra_model: cobra.Model ~ The cobrapy model</li>
+<li>species_abbreviation: str ~ A short name for the species that is represented by cobra_model.
+It must not contain underscores!</li>
+<li>objective_reaction_id: str ~ The reaction ID of the cobra_model's objective (only single-reaction
+objectives are allowed!).</li>
+<li>exchange_reaction_id_prefix: str ~ The prefix of the cobra_model's exchange reactions. E.g., in
+BIGG models, "EX_" is the prefix for exchange reactions.</li>
+<li>input_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+by the cobra_model. At least all essential medium metabolite should be listed here.</li>
+<li>output_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+by the cobra_model. At least all essential medium metabolite should be listed here.</li>
+<li>model_metabolite_to_exchange_id_mapping: Dict[str, str] ~ A dictionary containing the names of
+all input and output metabolite IDs as keys, and the corresponding metabolite ID names in the
+exchange compartment as children. The children must not already contain the exchange compartment's
+ID itself as this ID will be added at a later stage after its definition in the Community instance.</li>
+</ul>
+<h2 id="usage-example">Usage example</h2>
+<p>Suppose we defined a BIGG-compliant core model of <i>E. coli</i>, and
+we set the exchange compartment metabolite names just as the metabolite
+IDs themselves without the addition of the underscore plus compartment name, then
+a SingleModel definition could look like this:
+<pre>
+single_ec_core_model = SingleModel(
+    cobra_model=e_coli_core_model,
+    objective_reaction_id="BIOMASS_ec_core",
+    exchange_reaction_id_prefix="EX_",
+    input_metabolite_ids=["glc__D_e", "o2_e", "h_e", "h2o_e"],
+    output_metabolite_ids=["ac_e", "h2o_e", "h_e"],
+    model_metabolite_to_exchange_id_mapping={
+        "glc__D_e": "glc__D",
+        "o2_e": "o2",
+        "h_e": "h",
+        "h2o_e": "h2o",
+        "ac_e": "ac",
+    }
+)
+</pre></p></section>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class SingleModel:
+    &#34;&#34;&#34;Dataclass for the description of a single cobra model.
+
+    Description
+    ----------
+    An instance of this dataclass contains a cobrapy model itself,
+    as well as additional information regarding its objective and
+    its inputs and outputs.
+
+    Use case
+    ----------
+    In pyredcom, SingleModel instances are intended to be used
+    within Community instances. The additional information of SingleModel
+    instances is then used for the generation of the actual community model.
+
+    Member variables
+    ----------
+    * cobra_model: cobra.Model ~ The cobrapy model
+    * species_abbreviation: str ~ A short name for the species that is represented by cobra_model.
+      It must not contain underscores!
+    * objective_reaction_id: str ~ The reaction ID of the cobra_model&#39;s objective (only single-reaction
+      objectives are allowed!).
+    * exchange_reaction_id_prefix: str ~ The prefix of the cobra_model&#39;s exchange reactions. E.g., in
+      BIGG models, &#34;EX_&#34; is the prefix for exchange reactions.
+    * input_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+      by the cobra_model. At least all essential medium metabolite should be listed here.
+    * output_metabolite_ids: List[str] ~ A list of metabolite IDs of metabolites which can be taken up
+      by the cobra_model. At least all essential medium metabolite should be listed here.
+    * model_metabolite_to_exchange_id_mapping: Dict[str, str] ~ A dictionary containing the names of
+      all input and output metabolite IDs as keys, and the corresponding metabolite ID names in the
+      exchange compartment as children. The children must not already contain the exchange compartment&#39;s
+      ID itself as this ID will be added at a later stage after its definition in the Community instance.
+
+    Usage example
+    ----------
+    Suppose we defined a BIGG-compliant core model of &lt;i&gt;E. coli&lt;/i&gt;, and
+    we set the exchange compartment metabolite names just as the metabolite
+    IDs themselves without the addition of the underscore plus compartment name, then
+    a SingleModel definition could look like this:
+    &lt;pre&gt;
+    single_ec_core_model = SingleModel(
+        cobra_model=e_coli_core_model,
+        objective_reaction_id=&#34;BIOMASS_ec_core&#34;,
+        exchange_reaction_id_prefix=&#34;EX_&#34;,
+        input_metabolite_ids=[&#34;glc__D_e&#34;, &#34;o2_e&#34;, &#34;h_e&#34;, &#34;h2o_e&#34;],
+        output_metabolite_ids=[&#34;ac_e&#34;, &#34;h2o_e&#34;, &#34;h_e&#34;],
+        model_metabolite_to_exchange_id_mapping={
+            &#34;glc__D_e&#34;: &#34;glc__D&#34;,
+            &#34;o2_e&#34;: &#34;o2&#34;,
+            &#34;h_e&#34;: &#34;h&#34;,
+            &#34;h2o_e&#34;: &#34;h2o&#34;,
+            &#34;ac_e&#34;: &#34;ac&#34;,
+        }
+    )
+    &lt;/pre&gt;
+    &#34;&#34;&#34;
+    cobra_model: cobra.Model
+    species_abbreviation: str
+    objective_reaction_id: str
+    exchange_reaction_id_prefix: str
+    input_metabolite_ids: List[str]
+    output_metabolite_ids: List[str]
+    model_metabolite_to_exchange_id_mapping: Dict[str, str]</code></pre>
+</details>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<h1>Index</h1>
+<div class="toc">
+<ul>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="pyredcom.community_model_fba_summary" href="#pyredcom.community_model_fba_summary">community_model_fba_summary</a></code></li>
+<li><code><a title="pyredcom.generate_community_cobra_model" href="#pyredcom.generate_community_cobra_model">generate_community_cobra_model</a></code></li>
+<li><code><a title="pyredcom.minimal_species_redcom_fba" href="#pyredcom.minimal_species_redcom_fba">minimal_species_redcom_fba</a></code></li>
+<li><code><a title="pyredcom.redcom_fba" href="#pyredcom.redcom_fba">redcom_fba</a></code></li>
+<li><code><a title="pyredcom.split_reversible_organism_reactions" href="#pyredcom.split_reversible_organism_reactions">split_reversible_organism_reactions</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="pyredcom.Community" href="#pyredcom.Community">Community</a></code></h4>
+</li>
+<li>
+<h4><code><a title="pyredcom.SingleModel" href="#pyredcom.SingleModel">SingleModel</a></code></h4>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc"><cite>pdoc</cite> 0.7.1</a>.</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+</body>
+</html>
