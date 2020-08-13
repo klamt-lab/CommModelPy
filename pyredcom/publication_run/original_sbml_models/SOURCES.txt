@@ -1,9 +1,0 @@
-Both SBMLs of the genome-scale networks ECGS and ecolicore2 were taken from
-the supplementary data of the following publication:
-
-Hädicke, O., & Klamt, S. (2017). EColiCore2: a reference network model
-of the central metabolism of Escherichia coli and relationships to its
-genome-scale parent model. Scientific reports, 7, 39647.
-
-There, ECGS is given in the Supplementary Data 1 and
-ecolicore2 in the Supplementary Data 2
