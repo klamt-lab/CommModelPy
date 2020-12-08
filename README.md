@@ -1,60 +1,59 @@
-[![PyPI version](https://badge.fury.io/py/commodepy-Paulocracy.svg)](https://badge.fury.io/py/commodepy-Paulocracy)
+[![PyPI version](https://badge.fury.io/py/commodelpy.svg)](https://badge.fury.io/py/commodelpy)
 
-# commodepy
+# ComModelPy
 
 ## Description
 
-commodepy is a collection of Python [dataclasses](https://docs.python.org/3/library/dataclasses.html) and associated functions which aim to help one in generating stoichiometric metabolic models of communities which consist of one or multiple species. All dataclasses and functions are based on [cobrapy](https://github.com/opencobra/cobrapy).
+ComModelPy is a collection of Python [dataclasses](https://docs.python.org/3/library/dataclasses.html) and associated functions which aim to help one in generating stoichiometric metabolic models of communities which consist of one or multiple species. All dataclasses and functions are based on [cobrapy](https://github.com/opencobra/cobrapy).
 
-The underlying method for the definition of the generation of the community models and their MILP-based FBA analyses is the "RedCom" method as published in the following paper (Note: commodepy's author is not directly associated with this publication, and commodepy was not used for this paper):
+The underlying methods for the generation and analysis of the community models is explained in more detail in ComModelPy's source code documentation.
 
-* Koch, S., Kohrs, F., Lahmann, P., Bissinger, T., Wendschuh, S., Benndorf, D., ... & Klamt, S. (2019). RedCom: A strategy for reduced metabolic modeling of complex microbial communities and its application for analyzing experimental datasets from anaerobic digestion. *PLoS computational biology*, 15(2), e1006759. [doi:10.1371/journal.pcbi.1006759]( https://doi.org/10.1371/journal.pcbi.1006759)
-
-
-## Documentation
-
-A documentation of commodepy's features and functions can be found in the "docs" subfolder of this repository. The documentation's starting point is "index.html". The whole documentation was generated using [pdoc3](https://github.com/pdoc3/).
-
+An exemplary usage of ComModelPy is given in its publiation (Bekiaris & Klamt, in submission).
 
 ## Installation procedure
 
 ### Option 1: As PyPI module
 
-You can install commodepy as Python module from [PyPI](https://pypi.org/project/autopacmen-Paulocracy/) using *pip*:
+You can install ComModelPy as Python module from [PyPI](https://pypi.org/project/commodelpy/) using *pip*:
 
 <pre>
-pip install commodepy-Paulocracy
+pip install commodelpy
 </pre>
 
-Afterwards, you can use commodepy just as any other Python module using *import* in your Python session/script:
+Afterwards, you can use ComModelPy just as any other Python module using *import* in your Python session/script:
 <pre>
-import commodepy
+import commodelpy
 </pre>
-
-You can also access commodepy's documentation using Python's help function after importing commodepy, e.g. for the whole module:
+In order to import ComModelPy's main script with all major dataclasses and functions and which is called "commodelpy.py", you can import it using
 <pre>
-help(commodepy)
+import commodelpy.commodelpy
 </pre>
-
 
 ### Option 2: Direct download
 
-If you don't want to use commodepy as PyPI module, you can also download this repository directly. commodepy's main script file is the commodepy Python script in the "commodepy" subfolder.
+If you don't want to use ComModelPy as PyPI module, you can also download this repository directly. The main script file is the commodelpy.py Python script in the "commodelpy" subfolder.
 
+## Repository structure
 
-## Exemplary usage
+* The actual commodelpy pip package can be found in the "commodelpy" subfolder, where "commodelpy.py" contains all relevant functions and dataclasses.
+* All Python scripts which were used in ComModelPy's publication, which use ComModelPy's function for community models without defined growth and with fixed species ratios, can be found in the "publication_runs" subfolder, which is in the "commodelpy" subfolder. The scripts in the local subfolder "toy_model" contain the script for the generation of the toy model shown in the publication. The scripts in the local subfolder "ecoli_models" contain the generation of dG0 data using the [Equilibrator API](https://gitlab.com/equilibrator/equilibrator-api) as well as the ComModelPy-assisted generation of iML1515 and EcoliCore2 single-species community models. A complete call of all E. coli model scripts in the right order is given by the "execute_publication_ecoli_model_scripts.py" script in the main folder, a call of the toy model scripts is given by the "execute_publication_toy_model_script.py" script in the main folder.
+* An exemplary usage of ComModelPy with its function with a defined fixed growth rate and free species ratios can be found in the "balanced_growth_example" subfolder. A call of the relevant script is given in the "execute_balanced_growth_example.py" script in the main folder.
 
-Exemplary usage of commodepy can be found in the "puc" subfolder of the "commodepy" folder. It contains the scripts for the generation
-of the "shinjired" toy model, as well as community versions (i.e., a community of two times the respective model) of iJO1366 and
-EColiCore2. See the "example"'s folder <span>README.md</span> for the references of these examples.
+## Documentation
 
+A documentation of ComModelPy's features and functions can be found in the "docs/commodelpy/" subfolder of this repository. The documentation's starting point is "index.html". The whole documentation was generated using [pdoc3](https://github.com/pdoc3/).
 
-## Source code test range
+You can also access ComModelPy's documentation using Python's help function after importing ComModelPy, e.g. for the whole module:
+<pre>
+help(commodelpy)
+</pre>
 
-A small test range for commodepy can be found in the "test" subfolder of the "commodepy" folder,
-it is contained in the "test_commodepy()" function of "test_commodepy.py". The test system works e.g. with
-[pytest](https://github.com/pytest-dev/pytest).
+## Publication
 
+ComModelPy is published in the following publication:
+
+* Bekiaris & Klamt, 2021, *in submission*
 
 ## License
-commodepy is free and open source, using the Apache License, Version 2
+
+ComModelPy is free and open source, using the Apache License, Version 2
