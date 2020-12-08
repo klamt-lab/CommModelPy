@@ -1,7 +1,7 @@
 import cobra
 import copy
-from commodelpy.commodelpy import Community, SingleModel, generate_community_model_with_no_growth
-from commodelpy.submodules.helper_general import json_write
+from commmodelpy.commmodelpy import Community, SingleModel, generate_community_model_with_no_growth
+from commmodelpy.submodules.helper_general import json_write
 from typing import Dict
 
 S = cobra.Metabolite(id="S_c", compartment="c")
@@ -63,7 +63,7 @@ with single_model:
 
 model_1 = SingleModel(
     cobra_model=single_model,
-    species_abbreviation="species1",
+    species_abbreviation="strain1",
     objective_reaction_id="C_to_P",
     exchange_reaction_id_prefix="EX_",
     input_metabolite_ids=["S_c", "A_c", "B_c", "C_c", "P_c"],
@@ -77,7 +77,7 @@ model_1 = SingleModel(
     }
 )
 model_2 = copy.deepcopy(model_1)
-model_2.species_abbreviation = "species2"
+model_2.species_abbreviation = "strain2"
 
 community = Community(
     single_models=[model_1, model_2],
@@ -87,7 +87,7 @@ community = Community(
     output_metabolite_ids=["A", "B", "C", "P"]
 )
 community_model = generate_community_model_with_no_growth(
-    community, {"species1": 0.5, "species2": 0.5})
+    community, {"strain1": 0.5, "strain2": 0.5})
 
 for reaction in community_model.reactions:
     if reaction.id.startswith("EX_C_"):
@@ -95,12 +95,11 @@ for reaction in community_model.reactions:
             reaction.lower_bound = 0
             reaction.upper_bound = 0
     if reaction.id.startswith("EXCHG_"):
-        if (not reaction.id.startswith("EXCHG_species1_P_")) and (not reaction.id.startswith("EXCHG_species2_P_")) \
-           and (not reaction.id.startswith("EXCHG_species1_S_")) and (not reaction.id.startswith("EXCHG_species2_S_")):
+        if (not reaction.id.startswith("EXCHG_strain1_P_")) and (not reaction.id.startswith("EXCHG_strain2_P_")) \
+           and (not reaction.id.startswith("EXCHG_strain1_S_")) and (not reaction.id.startswith("EXCHG_strain2_S_")):
             reaction.lower_bound = 0
             reaction.upper_bound = 0
 
-print("A")
 community_model.objective = "EX_C_P_exchg"
 community_model.reactions.EX_C_P_exchg.upper_bound = 1000
 solution = community_model.optimize()
@@ -108,7 +107,6 @@ print(community_model.summary())
 for flux_key in solution.fluxes.keys():
     if abs(solution.fluxes[flux_key]) > 1e-9:
         print(flux_key, solution.fluxes[flux_key])
-print("B")
 cobra.io.write_sbml_model(community_model, "./publication_runs/toy_model/toymodelDouble.xml")
 
 pre_dictionary: Dict[str, float] = {
@@ -119,12 +117,12 @@ pre_dictionary: Dict[str, float] = {
 }
 dG0_dictionary: Dict[str, Dict[str, float]] = {}
 for key in pre_dictionary.keys():
-    dG0_dictionary[key+"_species1"] = {}
-    dG0_dictionary[key+"_species1"]["dG0"] = pre_dictionary[key]
-    dG0_dictionary[key+"_species1"]["uncertainty"] = 0
-    dG0_dictionary[key+"_species2"] = {}
-    dG0_dictionary[key+"_species2"]["dG0"] = pre_dictionary[key]
-    dG0_dictionary[key+"_species2"]["uncertainty"] = 0
+    dG0_dictionary[key+"_strain1"] = {}
+    dG0_dictionary[key+"_strain1"]["dG0"] = pre_dictionary[key]
+    dG0_dictionary[key+"_strain1"]["uncertainty"] = 0
+    dG0_dictionary[key+"_strain2"] = {}
+    dG0_dictionary[key+"_strain2"]["dG0"] = pre_dictionary[key]
+    dG0_dictionary[key+"_strain2"]["uncertainty"] = 0
 
 for reaction in community_model.reactions:
     if reaction.id.startswith("EXCHG_"):

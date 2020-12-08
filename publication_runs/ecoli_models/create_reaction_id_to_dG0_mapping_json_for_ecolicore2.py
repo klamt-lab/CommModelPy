@@ -18,14 +18,14 @@
 # External modules
 import cobra
 # Internal modules
-from publication_run.create_reaction_id_to_dG0_mapping_json import create_reaction_id_to_dG0_mapping_json
+from publication_runs.ecoli_models.create_reaction_id_to_dG0_mapping_json import create_reaction_id_to_dG0_mapping_json
 
 
 # ACTUAL ROUTINE SECTION
 print("=>Generate reaction ID<->dG0 mapping JSON for EcoliCore2")
 ecoli_model = cobra.io.read_sbml_model(
-    "./publication_runs/ecoli_models/sbml_models_in_used_form_with_demand_reactions/ecolicore2_loaded_and_saved_by_cobrapy_cleaned.xml")
+    "./publication_runs/ecoli_models/original_sbml_models_in_cleaned_form/ecolicore2_loaded_and_saved_by_cobrapy_cleaned.xml")
 create_reaction_id_to_dG0_mapping_json(
-    ecoli_model, "./publication_runs/ecoli_models/reaction_id_to_dG0_mapping_jsons/reaction_id_to_dG0_mapping_for_ecolicore.json")
+    ecoli_model, "./publication_runs/ecoli_models/model_reaction_id_to_dG0_mapping_jsons/reaction_id_to_dG0_mapping_for_ecolicore.json")
 print("Done!")
 print("")

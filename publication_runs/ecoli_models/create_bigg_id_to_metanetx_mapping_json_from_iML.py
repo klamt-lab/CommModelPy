@@ -19,14 +19,14 @@ of a JSON. This mapping is later used for the Equilibrator API-based
 calculation of dG0 values for reactions in iML1515 and EcoliCore2.
 """
 import cobra
-from commodelpy.submodules.helper_general import json_write
+from commmodelpy.submodules.helper_general import json_write
 from typing import Dict
 
 print("=>Create BIGG ID to MetaNetX mapping using the data given in iML1515")
 
 print("Load iML1515 in used form...")
 model = cobra.io.read_sbml_model(
-    "./publication_runs/ecoli_models/sbml_models_in_used_form_with_demand_reactions/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
+    "./publication_runs/ecoli_models/original_sbml_models_in_cleaned_form/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
 
 print("Read out BiGG IDs and associated MetaNetX IDs as given in iML1515's reactions, thereby creating the mapping...")
 bigg_id_metanetx_id_mapping: Dict[str, Dict[str, str]] = {}

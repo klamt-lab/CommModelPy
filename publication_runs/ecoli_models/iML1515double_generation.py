@@ -16,7 +16,7 @@
 """Generation script for the community model 'iML1515double'.
 
 iML1515double models a community of two iML1515 'organisms'. Its intention and usage is explained in
-more detail in commodelpy's publication.
+more detail in commmodelpy's publication.
 """
 
 # IMPORT SECTION
@@ -25,13 +25,13 @@ import cobra
 import copy
 from typing import Dict
 # Internal modules
-from commodelpy.commodelpy import Community, SingleModel, generate_community_model_with_no_growth
-from commodelpy.submodules.helper_general import json_write, json_load
+from commmodelpy.commmodelpy import Community, SingleModel, generate_community_model_with_no_growth
+from commmodelpy.submodules.helper_general import json_write, json_load
 
 
 # ecolicore double model
 # with internal exchanges for everything in the periplasm
-ecoli_model = cobra.io.read_sbml_model("publication_runs/ecoli_models/sbml_models_in_used_form_with_demand_reactions/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
+ecoli_model = cobra.io.read_sbml_model("publication_runs/ecoli_models/original_sbml_models_in_cleaned_form/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
 
 # Define essential and periplasmic metabolites (essential metabolites
 # were found by FBAs beforehand)
@@ -106,7 +106,7 @@ combined_input_metabolite_ids = list(set(all_input_metabolite_ids + essential_in
 combined_output_metabolite_ids = list(set(all_output_metabolite_ids + essential_out_metabolites + essential_in_metabolites))
 combined_metabolite_ids_mapping = {**all_inout_metabolite_ids_mapping, **essential_metabolite_mapping}
 
-# Define commodelpy SingleModel
+# Define commmodelpy SingleModel
 ecoli_1 = SingleModel(
     cobra_model=ecoli_model,
     species_abbreviation="ecoli1",
@@ -135,7 +135,7 @@ community = Community(
 community_model = generate_community_model_with_no_growth(community, {"ecoli1": 0.5, "ecoli2": 0.5})
 
 
-dG0_data_dict = json_load("./publication_runs/ecoli_models/reaction_id_to_dG0_mapping_jsons/reaction_id_to_dG0_mapping_for_iML1515.json")
+dG0_data_dict = json_load("./publication_runs/ecoli_models/model_reaction_id_to_dG0_mapping_jsons/reaction_id_to_dG0_mapping_for_iML1515.json")
 
 
 thermodynamically_excluded_metabolites = ["h2o", "h"]

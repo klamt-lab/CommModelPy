@@ -1,5 +1,5 @@
 import cobra
-from commodelpy.submodules.helper_general import json_load
+from commmodelpy.submodules.helper_general import json_load
 
 
 def print_statistics(title: str, amount: float, total: float):

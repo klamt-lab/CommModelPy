@@ -13,10 +13,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-"""This scripts calls all runs and submodules which were used for the generation of the community models used in commodelpy's publication.
+"""This scripts calls all runs and submodules which were used for the generation of the community models used in commmodelpy's publication.
 
 The strangely looking format using import only is used in order to let the scripts run within
-the commodelpy package since these scripts use commodelpy for themselves.
+the commmodelpy package since these scripts use commmodelpy for themselves.
 
 More details on every step of this run can be found in the respective imported scripts.
 """
@@ -29,3 +29,4 @@ import publication_runs.ecoli_models.create_reaction_id_to_dG0_mapping_json_for_
 import publication_runs.ecoli_models.ecolicore2double_generation
 import publication_runs.ecoli_models.ecolicore2triple_generation
 import publication_runs.ecoli_models.iML1515double_generation
+import publication_runs.ecoli_models.print_dG0_statistics_for_publication_models

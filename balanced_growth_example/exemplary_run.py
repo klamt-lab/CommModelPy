@@ -1,6 +1,6 @@
 import cobra
 import copy
-from commodelpy.commodelpy import Community, SingleModel, create_community_model_with_balanced_growth
+from commmodelpy.commmodelpy import Community, SingleModel, create_community_model_with_balanced_growth
 from typing import Dict
 
 growth_rate = 0.4
@@ -82,7 +82,7 @@ combined_output_metabolite_ids = list(set(
 combined_metabolite_ids_mapping = {
     **all_inout_metabolite_ids_mapping, **essential_metabolite_mapping}
 
-# Define commodelpy SingleModel
+# Define commmodelpy SingleModel
 ecoli_1 = SingleModel(
     cobra_model=ecoli_model,
     species_abbreviation="ecoli1",

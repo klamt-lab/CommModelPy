@@ -4,14 +4,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="commodelpy",
+    name="commmodelpy",
     version="0.1",
     author="Paulocracy",
     author_email="bekiaris@mpi-magdeburg.mpg.de",
-    description="The commodelpy package",
+    description="The commmodelpy package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ARB-Lab/commodelpy",
+    url="https://github.com/ARB-Lab/commmodelpy",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",

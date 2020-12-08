@@ -94,7 +94,7 @@ with model:
     print("~~~")
 
 print("Save iML1515 model...")
-cobra.io.write_sbml_model(model, "./publication_runs/ecoli_models/sbml_models_in_used_form_with_demand_reactions/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
+cobra.io.write_sbml_model(model, "./publication_runs/ecoli_models/original_sbml_models_in_cleaned_form/iML1515_loaded_and_saved_by_cobrapy_cleaned.xml")
 
 print("Done!")
 print("")

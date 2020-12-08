@@ -91,7 +91,7 @@ print("Delete redundant biomass metabolite...")
 model.remove_metabolites([model.metabolites.get_by_id("Biomass")])
 
 print("Saving SBML of cleaned EcoliCore2 model...")
-cobra.io.write_sbml_model(model, "./publication_runs/ecoli_models/sbml_models_in_used_form_with_demand_reactions/ecolicore2_loaded_and_saved_by_cobrapy_cleaned.xml")
+cobra.io.write_sbml_model(model, "./publication_runs/ecoli_models/original_sbml_models_in_cleaned_form/ecolicore2_loaded_and_saved_by_cobrapy_cleaned.xml")
 
 print("Done!")
 print("")

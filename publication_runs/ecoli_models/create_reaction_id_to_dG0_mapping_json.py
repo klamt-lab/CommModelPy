@@ -20,7 +20,7 @@ import cobra
 from equilibrator_api import ComponentContribution, Q_
 from typing import List, Dict
 # Internal modules
-from commodelpy.submodules.helper_general import json_load, json_write
+from commmodelpy.submodules.helper_general import json_load, json_write
 
 
 def create_reaction_id_to_dG0_mapping_json(model: cobra.Model, json_path: str) -> None:
