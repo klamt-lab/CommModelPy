@@ -30,9 +30,15 @@ def create_reaction_id_to_dG0_mapping_json(model: cobra.Model, json_path: str) -
     lets the Equilibrator API calculate the dG0 values for each reaction using
     the MetaNetX IDs for the metabolites.
 
+    This function is specifically written for the E. coli models used in CommModelPy's
+    publication as its selection of dG0 values is based on BiGG identifiers and as it
+    contains specific dG0 corrections for special reactions as referenced in the
+    comments of this function.
+    However, the general basis of this function can be easily adapted for other types of models.
+
     Arguments:
     * model: cobra.Model ~ The cobrapy model instance for which the dG0 mapping shall be created.
-    * json_path: str ~
+    * json_path: str ~ The path to the dG0 JSON that is going to be created.
 
     Output:
     * No variable but a JSON file with the mapping at json_path
