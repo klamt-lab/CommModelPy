@@ -33,10 +33,17 @@ import commmodelpy.commmodelpy
 
 If you don't want to use CommModelPy as PyPI module, you can also download this repository directly. The main script file is the commmodelpy.py Python script in the "commmodelpy" subfolder.
 
+### Optional external package: eQuilibrator API
+If you want to run the reaction dG0 calulations performed in the course of CommModelPy's publication results (see next chapter), you also have to install the [eQuilibrator API](https://gitlab.com/equilibrator/equilibrator-api) (not affiliated with CommModelPy or its developers) which is not included here due to its large download size of >1GB. You can download the API as follows from PyPI:
+
+<pre>
+pip install equilibrator-api
+</pre>
+
 ## Repository structure
 
 * The actual commmodelpy pip package can be found in the "commmodelpy" subfolder, where "commmodelpy.py" contains all relevant functions and dataclasses.
-* All Python scripts which were used in CommModelPy's publication, which use CommModelPy's function for community models without defined growth and with fixed species ratios, can be found in the "publication_runs" subfolder, which is in the "commmodelpy" subfolder. The scripts in the local subfolder "toy_model" contain the script for the generation of the toy model shown in the publication. The scripts in the local subfolder "ecoli_models" contain the generation of dG0 data using the [Equilibrator API](https://gitlab.com/equilibrator/equilibrator-api) as well as the CommModelPy-assisted generation of iML1515 and EcoliCore2 single-species community models. A complete call of all E. coli model scripts in the right order is given by the "execute_publication_ecoli_model_scripts.py" script in the main folder, a call of the toy model scripts is given by the "execute_publication_toy_model_script.py" script in the main folder.
+* All Python scripts which were used in CommModelPy's publication, which use CommModelPy's function for community models without defined growth and with fixed species ratios, can be found in the "publication_runs" subfolder, which is in the "commmodelpy" subfolder. The scripts in the local subfolder "toy_model" contain the script for the generation of the toy model shown in the publication. The scripts in the local subfolder "ecoli_models" contain the generation of dG0 data using the [eQuilibrator API](https://gitlab.com/equilibrator/equilibrator-api) as well as the CommModelPy-assisted generation of iML1515 and EcoliCore2 single-species community models. A complete call of all E. coli model scripts in the right order is given by the "execute_publication_ecoli_model_scripts.py" script in the main folder, a call of the toy model scripts is given by the "execute_publication_toy_model_script.py" script in the main folder.
 * An exemplary usage of CommModelPy with its function with a defined fixed growth rate and free species ratios can be found in the "balanced_growth_example" subfolder. A call of the relevant script is given in the "execute_balanced_growth_example.py" script in the main folder.
 
 ## Documentation
