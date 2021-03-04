@@ -691,22 +691,33 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
                                       name=f"Exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment")
 
             # Set reaction bounds
-            is_input = exchange_compartment_metabolite_id in community.input_metabolite_ids
+            is_input = exchange_compartment_metabolite_id in single_model.input_metabolite_ids
             if is_input:
                 reaction.lower_bound = -float("inf")
             else:
                 reaction.lower_bound = 0
-            is_output = exchange_compartment_metabolite_id in community.output_metabolite_ids
+            is_output = exchange_compartment_metabolite_id in single_model.output_metabolite_ids
             if is_output:
                 reaction.upper_bound = float("inf")
             else:
                 reaction.upper_bound = 0
 
             # Add metabolites to reaction
-            internal_metabolite = merged_model.metabolites.get_by_id(
-                exchange_metabolite_id)
-            exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
-                exchange_compartment_metabolite_id+"_"+community.exchange_compartment_id)
+            try:
+                internal_metabolite = merged_model.metabolites.get_by_id(
+                    exchange_metabolite_id)
+            except:
+                print("ERROR: Internal exchange metabolite ID " + exchange_metabolite_id + "does not exist!")
+            species_exchange_metabolite_id = exchange_compartment_metabolite_id+"_"+community.exchange_compartment_id
+            try:
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
+            except:
+                new_species_exchange_metabolite = cobra.Metabolite(id=species_exchange_metabolite_id,
+                    compartment="exchg")
+                merged_model.add_metabolites(new_species_exchange_metabolite)
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
             reaction.add_metabolites({
                 internal_metabolite: -1,
                 exchange_compartment_metabolite: 1,
@@ -716,6 +727,7 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             merged_model.add_reactions([reaction])
 
     # Set merged model's objective to community biomass
+    merged_model.add_reactions([community_biomass_reaction])
     merged_model.objective = "COMMUNITY_BIOMASS"
 
     return merged_model
