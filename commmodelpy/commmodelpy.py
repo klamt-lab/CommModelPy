@@ -167,8 +167,8 @@ class Community:
     output_metabolite_ids: List[str]
 
 
-"""
 # FUNCTION DEFINITIONS SECTION
+"""
 def community_model_fba_summary(model: cobra.Model, exchange_reaction_id_prefix: str = "EX_C_",
                                 optimization_title: str = "FBA") -> Tuple[cobra.Solution, List[Dict[str, int]]]:
     Performs an FBA (or any kind of modified optimization) on a commmodelpy-generated community model and prints the results.
@@ -636,6 +636,7 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             # Add ~r
             new_reaction = cobra.Reaction(id="Rsnake_UPPER_"+reaction.id,
                                           name="Delivery reaction of upper bound enforcing metabolite for "+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -648,6 +649,8 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             })
             merged_model.add_reactions([new_reaction])
 
+            reaction.upper_bound = float("inf")
+
         # Add minimal bound constraint
         if (reaction.lower_bound != -float("inf")) and (reaction.lower_bound != 0.0):
             # Add ~M
@@ -657,6 +660,7 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             # Add ~r
             new_reaction = cobra.Reaction(id="Rsnake_LOWER_"+reaction.id,
                                           name="Delivery reaction of lower bound enforcing metabolite for "+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -669,6 +673,8 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             })
             merged_model.add_reactions([new_reaction])
 
+            reaction.lower_bound = 0
+
     # Add single species <-> exchange compartment exchanges
     for single_model in community.single_models:
         exchange_metabolite_ids = list(
@@ -676,27 +682,21 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
         exchange_metabolite_ids = [
             x+"_"+single_model.species_abbreviation for x in exchange_metabolite_ids]
 
-        # Add mock community biomass metabolites for the ASTHERISC package's species recognition
-        biomass_metabolite = cobra.Metabolite(id="community_biomass_"+single_model.species_abbreviation,
-                                              name="Mock community biomass metabolite for ASTHERISC package species recognition",
-                                              compartment="exchg")
-        merged_model.add_metabolites([biomass_metabolite])
-
         for exchange_metabolite_id in exchange_metabolite_ids:
-            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[exchange_metabolite_id.replace(
-                "_"+single_model.species_abbreviation, "")]
+            single_model_base_metabolite_id = exchange_metabolite_id.replace("_"+single_model.species_abbreviation, "")
+            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[single_model_base_metabolite_id]
 
             # Set reaction instance
             reaction = cobra.Reaction(id="EXCHG_"+single_model.species_abbreviation+"_"+exchange_metabolite_id.replace("_"+single_model.species_abbreviation, "")+"_to_"+exchange_compartment_metabolite_id,
                                       name=f"Exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment")
 
             # Set reaction bounds
-            is_input = exchange_compartment_metabolite_id in single_model.input_metabolite_ids
+            is_input = single_model_base_metabolite_id in single_model.input_metabolite_ids
             if is_input:
                 reaction.lower_bound = -float("inf")
             else:
                 reaction.lower_bound = 0
-            is_output = exchange_compartment_metabolite_id in single_model.output_metabolite_ids
+            is_output = single_model_base_metabolite_id in single_model.output_metabolite_ids
             if is_output:
                 reaction.upper_bound = float("inf")
             else:
