@@ -36,7 +36,7 @@ References
 import cobra
 import copy
 from dataclasses import dataclass
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 
 # DATACLASS DEFINITIONS SECTION
@@ -442,7 +442,7 @@ def generate_community_model_with_no_growth(community: Community, fractions: Dic
     return merged_model
 
 
-def create_community_model_with_balanced_growth(community: Community, growth_rate: float) -> cobra.Model:
+def create_community_model_with_balanced_growth(community: Community, growth_rate: float, organism_exchange_bounds: Dict[str, Tuple[float, float]] = {}) -> cobra.Model:
     """Creates a combined community model with an stoichiometric-matrix-integrated balanced growth approach.
 
     Description
@@ -518,8 +518,11 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
 
     Arguments
     ----------
-    * community: Community ~
-    * growth_rate: float ~
+    * community: Community ~ A CommModelPy Community instance.
+    * growth_rate: float ~ The growth rate to which the community shall be fixed.
+    * organism_exchange_bounds: Dict[Tuple[float, float]] ~ A dictionary containing reaction IDs
+      (which may also include the EXCHG_ reactions introduced by this function) as keys
+      and, in the float tuple at index 0 a set lower bound and at index 1 a set upper bound.
     """
     # Get number of SingleModel instances in Community instance
     num_single_models = len(community.single_models)
@@ -675,6 +678,16 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
                 reaction_out.upper_bound = float("inf")
 
                 merged_model.add_reactions([reaction_out])
+
+    # Add organism-specific reaction bounds
+    bound_reaction_ids = [x.id for x in merged_model.reactions
+                          if x.id in list(organism_exchange_bounds.keys())]
+    for bound_reaction_id in bound_reaction_ids:
+        lower_bound = organism_exchange_bounds[bound_reaction_id][0]
+        upper_bound = organism_exchange_bounds[bound_reaction_id][1]
+        reaction = merged_model.reactions.get_by_id(bound_reaction_id)
+        reaction.lower_bound = lower_bound
+        reaction.upper_bound = upper_bound
 
     # Add minimal and maximal bound constraints using pseudo-metabolites and pseudo-reactions
     reaction_ids = [x.id for x in merged_model.reactions]
