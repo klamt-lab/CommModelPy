@@ -57,9 +57,10 @@ help(commmodelpy)
 
 ## Publication
 
-CommModelPy is published in the following publication:
+CommModelPy is described and used in the following publication:
 
-* Bekiaris & Klamt, 2021, *in submission*
+* [Bekiaris, P. S., & Klamt, S. (2021). Designing microbial communities to maximize the thermodynamic driving force for the production of chemicals. PLOS Computational Biology, 17(6), e1009093.](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009093)
+
 
 ## License
 
