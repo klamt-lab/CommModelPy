@@ -81,7 +81,7 @@ References
 import cobra
 import copy
 from dataclasses import dataclass
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 
 # DATACLASS DEFINITIONS SECTION
@@ -212,8 +212,8 @@ class Community:
     output_metabolite_ids: List[str]
 
 
-&#34;&#34;&#34;
 # FUNCTION DEFINITIONS SECTION
+&#34;&#34;&#34;
 def community_model_fba_summary(model: cobra.Model, exchange_reaction_id_prefix: str = &#34;EX_C_&#34;,
                                 optimization_title: str = &#34;FBA&#34;) -&gt; Tuple[cobra.Solution, List[Dict[str, int]]]:
     Performs an FBA (or any kind of modified optimization) on a commmodelpy-generated community model and prints the results.
@@ -487,7 +487,7 @@ def generate_community_model_with_no_growth(community: Community, fractions: Dic
     return merged_model
 
 
-def create_community_model_with_balanced_growth(community: Community, growth_rate: float) -&gt; cobra.Model:
+def create_community_model_with_balanced_growth(community: Community, growth_rate: float, organism_exchange_bounds: Dict[str, Tuple[float, float]] = {}) -&gt; cobra.Model:
     &#34;&#34;&#34;Creates a combined community model with an stoichiometric-matrix-integrated balanced growth approach.
 
     Description
@@ -546,6 +546,11 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
        metabolites from the respective SingleSpecies instances, as well as from the exchange
        compartment to the environment for all input/output metabolites of the Community instance. All previous standard
        exchanges of the single models (usually starting with &#34;EX_&#34;) are deleted.
+       The new exchange reactions start with EXCHG_in_ for input reactions (input to organism) and EXCHG_out_ for output metabolites
+       (output from organism). Both types of EXCHG_ reactions are irreversible, and EXCHG_in_ reactions get an upper bound of
+       1000 mmol/(gDW*h) as standard in order to enforce the incorporation of Msnake_UPPER_ upper bound metabolites so that growth is
+       actually enforced for all organisms in which reactions occur (which may not be the case if reactions with lower/upper bounds
+       of inf are used).
 
     The principle used herein also means that if another growth rate is to be tested, a new model has to be generated for this
     specific growth rate.
@@ -558,8 +563,11 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
 
     Arguments
     ----------
-    * community: Community ~
-    * growth_rate: float ~
+    * community: Community ~ A CommModelPy Community instance.
+    * growth_rate: float ~ The growth rate to which the community shall be fixed.
+    * organism_exchange_bounds: Dict[Tuple[float, float]] ~ A dictionary containing reaction IDs
+      (which may also include the EXCHG_ reactions introduced by this function) as keys
+      and, in the float tuple at index 0 a set lower bound and at index 1 a set upper bound.
     &#34;&#34;&#34;
     # Get number of SingleModel instances in Community instance
     num_single_models = len(community.single_models)
@@ -660,15 +668,86 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
         community_biomass_metabolite: -1,
     })
 
-    # Add minimal and maximal bound constraint
+    # Add single species &lt;-&gt; exchange compartment exchanges
+    for single_model in community.single_models:
+        exchange_metabolite_ids = list(
+            set(single_model.input_metabolite_ids + single_model.output_metabolite_ids))
+        exchange_metabolite_ids = [
+            x+&#34;_&#34;+single_model.species_abbreviation for x in exchange_metabolite_ids]
+
+        for exchange_metabolite_id in exchange_metabolite_ids:
+            single_model_base_metabolite_id = exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)
+            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[single_model_base_metabolite_id]
+
+            # Add metabolites to reaction
+            try:
+                internal_metabolite = merged_model.metabolites.get_by_id(
+                    exchange_metabolite_id)
+            except:
+                print(&#34;ERROR: Internal exchange metabolite ID &#34; + exchange_metabolite_id + &#34;does not exist!&#34;)
+            species_exchange_metabolite_id = exchange_compartment_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+            try:
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
+            except:
+                new_species_exchange_metabolite = cobra.Metabolite(id=species_exchange_metabolite_id,
+                    compartment=&#34;exchg&#34;)
+                merged_model.add_metabolites(new_species_exchange_metabolite)
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
+
+            # Set reaction bounds
+            is_input = single_model_base_metabolite_id in single_model.input_metabolite_ids
+            is_output = single_model_base_metabolite_id in single_model.output_metabolite_ids
+
+            # Set reaction instance
+            if is_input:
+                reaction_in = cobra.Reaction(id=&#34;EXCHG_in_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
+                                      name=f&#34;Input exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
+                reaction_in.add_metabolites({
+                    exchange_compartment_metabolite: -1,
+                    internal_metabolite: 1,
+                })
+                reaction_in.lower_bound = 0
+                reaction_in.upper_bound = 1000
+
+                merged_model.add_reactions([reaction_in])
+            if is_output:
+                reaction_out = cobra.Reaction(id=&#34;EXCHG_out_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
+                                      name=f&#34;Output exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
+                reaction_out.add_metabolites({
+                    internal_metabolite: -1,
+                    exchange_compartment_metabolite: 1,
+                })
+                reaction_out.lower_bound = 0
+                reaction_out.upper_bound = float(&#34;inf&#34;)
+
+                merged_model.add_reactions([reaction_out])
+
+    # Add organism-specific reaction bounds
+    bound_reaction_ids = [x.id for x in merged_model.reactions
+                          if x.id in list(organism_exchange_bounds.keys())]
+    for bound_reaction_id in bound_reaction_ids:
+        lower_bound = organism_exchange_bounds[bound_reaction_id][0]
+        upper_bound = organism_exchange_bounds[bound_reaction_id][1]
+        reaction = merged_model.reactions.get_by_id(bound_reaction_id)
+        reaction.lower_bound = lower_bound
+        reaction.upper_bound = upper_bound
+
+    # Add minimal and maximal bound constraints using pseudo-metabolites and pseudo-reactions
     reaction_ids = [x.id for x in merged_model.reactions]
     for reaction_id in reaction_ids:
         reaction = merged_model.reactions.get_by_id(reaction_id)
 
         # Check organism ID
-        reaction_organism_id = reaction.id.split(&#34;_&#34;)[-1]
-        if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
-            continue
+        if reaction_id.startswith(&#34;EXCHG&#34;):
+            reaction_organism_id = reaction.id.split(&#34;_&#34;)[2]
+            if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
+                continue
+        else:
+            reaction_organism_id = reaction.id.split(&#34;_&#34;)[-1]
+            if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
+                continue
 
         organism_biomass_reaction = merged_model.reactions.get_by_id(
             organism_id_biomass_reaction_id_mapping[reaction_organism_id])
@@ -681,6 +760,7 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             # Add ~r
             new_reaction = cobra.Reaction(id=&#34;Rsnake_UPPER_&#34;+reaction.id,
                                           name=&#34;Delivery reaction of upper bound enforcing metabolite for &#34;+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -693,6 +773,8 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             })
             merged_model.add_reactions([new_reaction])
 
+            reaction.upper_bound = float(&#34;inf&#34;)
+
         # Add minimal bound constraint
         if (reaction.lower_bound != -float(&#34;inf&#34;)) and (reaction.lower_bound != 0.0):
             # Add ~M
@@ -701,7 +783,8 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
                                               compartment=&#34;exchg&#34;)
             # Add ~r
             new_reaction = cobra.Reaction(id=&#34;Rsnake_LOWER_&#34;+reaction.id,
-                                          name=&#34;Delivery reaction of lower bound enforcing metabolite for &#34;+reaction.id)
+                                          name=&#34;Consuming reaction of lower bound enforcing metabolite for &#34;+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -714,53 +797,10 @@ def create_community_model_with_balanced_growth(community: Community, growth_rat
             })
             merged_model.add_reactions([new_reaction])
 
-    # Add single species &lt;-&gt; exchange compartment exchanges
-    for single_model in community.single_models:
-        exchange_metabolite_ids = list(
-            set(single_model.input_metabolite_ids + single_model.output_metabolite_ids))
-        exchange_metabolite_ids = [
-            x+&#34;_&#34;+single_model.species_abbreviation for x in exchange_metabolite_ids]
-
-        # Add mock community biomass metabolites for the ASTHERISC package&#39;s species recognition
-        biomass_metabolite = cobra.Metabolite(id=&#34;community_biomass_&#34;+single_model.species_abbreviation,
-                                              name=&#34;Mock community biomass metabolite for ASTHERISC package species recognition&#34;,
-                                              compartment=&#34;exchg&#34;)
-        merged_model.add_metabolites([biomass_metabolite])
-
-        for exchange_metabolite_id in exchange_metabolite_ids:
-            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[exchange_metabolite_id.replace(
-                &#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)]
-
-            # Set reaction instance
-            reaction = cobra.Reaction(id=&#34;EXCHG_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
-                                      name=f&#34;Exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
-
-            # Set reaction bounds
-            is_input = exchange_compartment_metabolite_id in community.input_metabolite_ids
-            if is_input:
-                reaction.lower_bound = -float(&#34;inf&#34;)
-            else:
-                reaction.lower_bound = 0
-            is_output = exchange_compartment_metabolite_id in community.output_metabolite_ids
-            if is_output:
-                reaction.upper_bound = float(&#34;inf&#34;)
-            else:
-                reaction.upper_bound = 0
-
-            # Add metabolites to reaction
-            internal_metabolite = merged_model.metabolites.get_by_id(
-                exchange_metabolite_id)
-            exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
-                exchange_compartment_metabolite_id+&#34;_&#34;+community.exchange_compartment_id)
-            reaction.add_metabolites({
-                internal_metabolite: -1,
-                exchange_compartment_metabolite: 1,
-            })
-
-            # Add reaction to model
-            merged_model.add_reactions([reaction])
+            reaction.lower_bound = 0
 
     # Set merged model&#39;s objective to community biomass
+    merged_model.add_reactions([community_biomass_reaction])
     merged_model.objective = &#34;COMMUNITY_BIOMASS&#34;
 
     return merged_model
@@ -837,7 +877,7 @@ def split_reversible_organism_reactions(model: cobra.Model, organism_id_biomass_
 <h2 class="section-title" id="header-functions">Functions</h2>
 <dl>
 <dt id="commmodelpy.commmodelpy.create_community_model_with_balanced_growth"><code class="name flex">
-<span>def <span class="ident">create_community_model_with_balanced_growth</span></span>(<span>community: <a title="commmodelpy.commmodelpy.Community" href="#commmodelpy.commmodelpy.Community">Community</a>, growth_rate: float) ‑> cobra.core.model.Model</span>
+<span>def <span class="ident">create_community_model_with_balanced_growth</span></span>(<span>community: <a title="commmodelpy.commmodelpy.Community" href="#commmodelpy.commmodelpy.Community">Community</a>, growth_rate: float, organism_exchange_bounds: Dict[str, Tuple[float, float]] = {}) ‑> cobra.core.model.Model</span>
 </code></dt>
 <dd>
 <div class="desc"><p>Creates a combined community model with an stoichiometric-matrix-integrated balanced growth approach.</p>
@@ -888,7 +928,12 @@ are introduced into the model as described in the previous section.</li>
 <li>Exchange reactions between the single species comparments and the exchange compartment for all input/output
 metabolites from the respective SingleSpecies instances, as well as from the exchange
 compartment to the environment for all input/output metabolites of the Community instance. All previous standard
-exchanges of the single models (usually starting with "EX_") are deleted.</li>
+exchanges of the single models (usually starting with "EX_") are deleted.
+The new exchange reactions start with EXCHG_in_ for input reactions (input to organism) and EXCHG_out_ for output metabolites
+(output from organism). Both types of EXCHG_ reactions are irreversible, and EXCHG_in_ reactions get an upper bound of
+1000 mmol/(gDW*h) as standard in order to enforce the incorporation of Msnake_UPPER_ upper bound metabolites so that growth is
+actually enforced for all organisms in which reactions occur (which may not be the case if reactions with lower/upper bounds
+of inf are used).</li>
 </ol>
 <p>The principle used herein also means that if another growth rate is to be tested, a new model has to be generated for this
 specific growth rate.</p>
@@ -898,14 +943,17 @@ Model instance. This form of the community model - with its fixed organism
 ratios - can be e.g. used with the ASTHERISC package.</p>
 <h2 id="arguments">Arguments</h2>
 <ul>
-<li>community: Community ~</li>
-<li>growth_rate: float ~</li>
+<li>community: Community ~ A CommModelPy Community instance.</li>
+<li>growth_rate: float ~ The growth rate to which the community shall be fixed.</li>
+<li>organism_exchange_bounds: Dict[Tuple[float, float]] ~ A dictionary containing reaction IDs
+(which may also include the EXCHG_ reactions introduced by this function) as keys
+and, in the float tuple at index 0 a set lower bound and at index 1 a set upper bound.</li>
 </ul></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
 </summary>
-<pre><code class="python">def create_community_model_with_balanced_growth(community: Community, growth_rate: float) -&gt; cobra.Model:
+<pre><code class="python">def create_community_model_with_balanced_growth(community: Community, growth_rate: float, organism_exchange_bounds: Dict[str, Tuple[float, float]] = {}) -&gt; cobra.Model:
     &#34;&#34;&#34;Creates a combined community model with an stoichiometric-matrix-integrated balanced growth approach.
 
     Description
@@ -964,6 +1012,11 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
        metabolites from the respective SingleSpecies instances, as well as from the exchange
        compartment to the environment for all input/output metabolites of the Community instance. All previous standard
        exchanges of the single models (usually starting with &#34;EX_&#34;) are deleted.
+       The new exchange reactions start with EXCHG_in_ for input reactions (input to organism) and EXCHG_out_ for output metabolites
+       (output from organism). Both types of EXCHG_ reactions are irreversible, and EXCHG_in_ reactions get an upper bound of
+       1000 mmol/(gDW*h) as standard in order to enforce the incorporation of Msnake_UPPER_ upper bound metabolites so that growth is
+       actually enforced for all organisms in which reactions occur (which may not be the case if reactions with lower/upper bounds
+       of inf are used).
 
     The principle used herein also means that if another growth rate is to be tested, a new model has to be generated for this
     specific growth rate.
@@ -976,8 +1029,11 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
 
     Arguments
     ----------
-    * community: Community ~
-    * growth_rate: float ~
+    * community: Community ~ A CommModelPy Community instance.
+    * growth_rate: float ~ The growth rate to which the community shall be fixed.
+    * organism_exchange_bounds: Dict[Tuple[float, float]] ~ A dictionary containing reaction IDs
+      (which may also include the EXCHG_ reactions introduced by this function) as keys
+      and, in the float tuple at index 0 a set lower bound and at index 1 a set upper bound.
     &#34;&#34;&#34;
     # Get number of SingleModel instances in Community instance
     num_single_models = len(community.single_models)
@@ -1078,15 +1134,86 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
         community_biomass_metabolite: -1,
     })
 
-    # Add minimal and maximal bound constraint
+    # Add single species &lt;-&gt; exchange compartment exchanges
+    for single_model in community.single_models:
+        exchange_metabolite_ids = list(
+            set(single_model.input_metabolite_ids + single_model.output_metabolite_ids))
+        exchange_metabolite_ids = [
+            x+&#34;_&#34;+single_model.species_abbreviation for x in exchange_metabolite_ids]
+
+        for exchange_metabolite_id in exchange_metabolite_ids:
+            single_model_base_metabolite_id = exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)
+            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[single_model_base_metabolite_id]
+
+            # Add metabolites to reaction
+            try:
+                internal_metabolite = merged_model.metabolites.get_by_id(
+                    exchange_metabolite_id)
+            except:
+                print(&#34;ERROR: Internal exchange metabolite ID &#34; + exchange_metabolite_id + &#34;does not exist!&#34;)
+            species_exchange_metabolite_id = exchange_compartment_metabolite_id+&#34;_&#34;+community.exchange_compartment_id
+            try:
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
+            except:
+                new_species_exchange_metabolite = cobra.Metabolite(id=species_exchange_metabolite_id,
+                    compartment=&#34;exchg&#34;)
+                merged_model.add_metabolites(new_species_exchange_metabolite)
+                exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
+                    species_exchange_metabolite_id)
+
+            # Set reaction bounds
+            is_input = single_model_base_metabolite_id in single_model.input_metabolite_ids
+            is_output = single_model_base_metabolite_id in single_model.output_metabolite_ids
+
+            # Set reaction instance
+            if is_input:
+                reaction_in = cobra.Reaction(id=&#34;EXCHG_in_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
+                                      name=f&#34;Input exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
+                reaction_in.add_metabolites({
+                    exchange_compartment_metabolite: -1,
+                    internal_metabolite: 1,
+                })
+                reaction_in.lower_bound = 0
+                reaction_in.upper_bound = 1000
+
+                merged_model.add_reactions([reaction_in])
+            if is_output:
+                reaction_out = cobra.Reaction(id=&#34;EXCHG_out_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
+                                      name=f&#34;Output exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
+                reaction_out.add_metabolites({
+                    internal_metabolite: -1,
+                    exchange_compartment_metabolite: 1,
+                })
+                reaction_out.lower_bound = 0
+                reaction_out.upper_bound = float(&#34;inf&#34;)
+
+                merged_model.add_reactions([reaction_out])
+
+    # Add organism-specific reaction bounds
+    bound_reaction_ids = [x.id for x in merged_model.reactions
+                          if x.id in list(organism_exchange_bounds.keys())]
+    for bound_reaction_id in bound_reaction_ids:
+        lower_bound = organism_exchange_bounds[bound_reaction_id][0]
+        upper_bound = organism_exchange_bounds[bound_reaction_id][1]
+        reaction = merged_model.reactions.get_by_id(bound_reaction_id)
+        reaction.lower_bound = lower_bound
+        reaction.upper_bound = upper_bound
+
+    # Add minimal and maximal bound constraints using pseudo-metabolites and pseudo-reactions
     reaction_ids = [x.id for x in merged_model.reactions]
     for reaction_id in reaction_ids:
         reaction = merged_model.reactions.get_by_id(reaction_id)
 
         # Check organism ID
-        reaction_organism_id = reaction.id.split(&#34;_&#34;)[-1]
-        if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
-            continue
+        if reaction_id.startswith(&#34;EXCHG&#34;):
+            reaction_organism_id = reaction.id.split(&#34;_&#34;)[2]
+            if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
+                continue
+        else:
+            reaction_organism_id = reaction.id.split(&#34;_&#34;)[-1]
+            if reaction_organism_id not in organism_id_biomass_reaction_id_mapping.keys():
+                continue
 
         organism_biomass_reaction = merged_model.reactions.get_by_id(
             organism_id_biomass_reaction_id_mapping[reaction_organism_id])
@@ -1099,6 +1226,7 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
             # Add ~r
             new_reaction = cobra.Reaction(id=&#34;Rsnake_UPPER_&#34;+reaction.id,
                                           name=&#34;Delivery reaction of upper bound enforcing metabolite for &#34;+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -1111,6 +1239,8 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
             })
             merged_model.add_reactions([new_reaction])
 
+            reaction.upper_bound = float(&#34;inf&#34;)
+
         # Add minimal bound constraint
         if (reaction.lower_bound != -float(&#34;inf&#34;)) and (reaction.lower_bound != 0.0):
             # Add ~M
@@ -1119,7 +1249,8 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
                                               compartment=&#34;exchg&#34;)
             # Add ~r
             new_reaction = cobra.Reaction(id=&#34;Rsnake_LOWER_&#34;+reaction.id,
-                                          name=&#34;Delivery reaction of lower bound enforcing metabolite for &#34;+reaction.id)
+                                          name=&#34;Consuming reaction of lower bound enforcing metabolite for &#34;+reaction.id)
+
             # Add ~M to original reaction
             reaction.add_metabolites({
                 new_metabolite: 1,
@@ -1132,53 +1263,10 @@ ratios - can be e.g. used with the ASTHERISC package.</p>
             })
             merged_model.add_reactions([new_reaction])
 
-    # Add single species &lt;-&gt; exchange compartment exchanges
-    for single_model in community.single_models:
-        exchange_metabolite_ids = list(
-            set(single_model.input_metabolite_ids + single_model.output_metabolite_ids))
-        exchange_metabolite_ids = [
-            x+&#34;_&#34;+single_model.species_abbreviation for x in exchange_metabolite_ids]
-
-        # Add mock community biomass metabolites for the ASTHERISC package&#39;s species recognition
-        biomass_metabolite = cobra.Metabolite(id=&#34;community_biomass_&#34;+single_model.species_abbreviation,
-                                              name=&#34;Mock community biomass metabolite for ASTHERISC package species recognition&#34;,
-                                              compartment=&#34;exchg&#34;)
-        merged_model.add_metabolites([biomass_metabolite])
-
-        for exchange_metabolite_id in exchange_metabolite_ids:
-            exchange_compartment_metabolite_id = single_model.model_metabolite_to_exchange_id_mapping[exchange_metabolite_id.replace(
-                &#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)]
-
-            # Set reaction instance
-            reaction = cobra.Reaction(id=&#34;EXCHG_&#34;+single_model.species_abbreviation+&#34;_&#34;+exchange_metabolite_id.replace(&#34;_&#34;+single_model.species_abbreviation, &#34;&#34;)+&#34;_to_&#34;+exchange_compartment_metabolite_id,
-                                      name=f&#34;Exchange for {exchange_metabolite_id} from single species {single_model.species_abbreviation} to exchange compartment&#34;)
-
-            # Set reaction bounds
-            is_input = exchange_compartment_metabolite_id in community.input_metabolite_ids
-            if is_input:
-                reaction.lower_bound = -float(&#34;inf&#34;)
-            else:
-                reaction.lower_bound = 0
-            is_output = exchange_compartment_metabolite_id in community.output_metabolite_ids
-            if is_output:
-                reaction.upper_bound = float(&#34;inf&#34;)
-            else:
-                reaction.upper_bound = 0
-
-            # Add metabolites to reaction
-            internal_metabolite = merged_model.metabolites.get_by_id(
-                exchange_metabolite_id)
-            exchange_compartment_metabolite = merged_model.metabolites.get_by_id(
-                exchange_compartment_metabolite_id+&#34;_&#34;+community.exchange_compartment_id)
-            reaction.add_metabolites({
-                internal_metabolite: -1,
-                exchange_compartment_metabolite: 1,
-            })
-
-            # Add reaction to model
-            merged_model.add_reactions([reaction])
+            reaction.lower_bound = 0
 
     # Set merged model&#39;s objective to community biomass
+    merged_model.add_reactions([community_biomass_reaction])
     merged_model.objective = &#34;COMMUNITY_BIOMASS&#34;
 
     return merged_model</code></pre>
@@ -1530,7 +1618,7 @@ one from <em>Vibrio natriegens</em> - and we want to name the exchange compartme
 set the prefix of the community's exchange metabolites to "EX_C" and <em>E. coli</em> has the
 input metabolites glc__D, o2, h and h2o, and <em>V. natriegens</em> the additional input
 metabolite biotin, and both habe the output metabolites ac and co2,
-then we could set the Community instance as follows:
+then we could set the Community instance as follows:</p>
 <pre>
 community_example = Community(
     single_models = [ecoli_core, vnatriegens_core],
@@ -1539,7 +1627,7 @@ community_example = Community(
     input_metabolite_ids = ["glc__D", "o2", "h", "h2o", "ac", "biotin"],
     output_metabolite_ids = ["ac", "co2"]
 )
-</pre></p></div>
+</pre></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
@@ -1662,7 +1750,7 @@ ID itself as this ID will be added at a later stage after its definition in the 
 <p>Suppose we defined a BiGG-compliant core model of <i>E. coli</i>, and
 we set the exchange compartment metabolite names just as the metabolite
 IDs themselves without the addition of the underscore plus compartment name, then
-a SingleModel definition could look like this:
+a SingleModel definition could look like this:</p>
 <pre>
 single_ec_core_model = SingleModel(
     cobra_model=e_coli_core_model,
@@ -1679,7 +1767,7 @@ single_ec_core_model = SingleModel(
         "ac_e": "ac",
     }
 )
-</pre></p></div>
+</pre></div>
 <details class="source">
 <summary>
 <span>Expand source code</span>
