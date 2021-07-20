@@ -237,40 +237,26 @@
       <species id="M_EXCHG_ecoli1_fdp_c_to_fdp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_g3p_c_to_g3p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_g3p_c_to_g3p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_acald_c_to_acald_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_acald_c_to_acald_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_amp_c_to_amp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_amp_c_to_amp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_glyc3p_c_to_glyc3p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_glyc3p_c_to_glyc3p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_oaa_c_to_oaa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_oaa_c_to_oaa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_q8h2_c_to_q8h2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_q8h2_c_to_q8h2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_atp_c_to_atp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_atp_c_to_atp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_pep_c_to_pep_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_pep_c_to_pep_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_ru5p__D_c_to_ru5p__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_ru5p__D_c_to_ru5p__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_acon__C_c_to_acon__C_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_acon__C_c_to_acon__C_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_dha_c_to_dha_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_dha_c_to_dha_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_e4p_c_to_e4p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_e4p_c_to_e4p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_6pgl_c_to_6pgl_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -281,10 +267,6 @@
       <species id="M_EXCHG_ecoli1_accoa_c_to_accoa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_mal__L_c_to_mal__L_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_mal__L_c_to_mal__L_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_mql8_c_to_mql8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_mql8_c_to_mql8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_nadh_c_to_nadh_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -303,12 +285,6 @@
       <species id="M_EXCHG_ecoli1_pyr_c_to_pyr_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_g6p_c_to_g6p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_g6p_c_to_g6p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_succoa_c_to_succoa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_succoa_c_to_succoa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_icit_c_to_icit_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -331,54 +307,34 @@
       <species id="M_EXCHG_ecoli1_nadph_c_to_nadph_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_cit_c_to_cit_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_cit_c_to_cit_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_r5p_c_to_r5p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_r5p_c_to_r5p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_f6p_c_to_f6p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli1_f6p_c_to_f6p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_fdp_c_to_fdp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_fdp_c_to_fdp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_g3p_c_to_g3p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_g3p_c_to_g3p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_acald_c_to_acald_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_acald_c_to_acald_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_amp_c_to_amp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_amp_c_to_amp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_glyc3p_c_to_glyc3p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_glyc3p_c_to_glyc3p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_oaa_c_to_oaa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_oaa_c_to_oaa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_q8h2_c_to_q8h2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_q8h2_c_to_q8h2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_atp_c_to_atp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_atp_c_to_atp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_pep_c_to_pep_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_pep_c_to_pep_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_ru5p__D_c_to_ru5p__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_ru5p__D_c_to_ru5p__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_acon__C_c_to_acon__C_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_acon__C_c_to_acon__C_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_dha_c_to_dha_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_dha_c_to_dha_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_e4p_c_to_e4p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_e4p_c_to_e4p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_6pgl_c_to_6pgl_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -389,10 +345,6 @@
       <species id="M_EXCHG_ecoli2_accoa_c_to_accoa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_mal__L_c_to_mal__L_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_mal__L_c_to_mal__L_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_mql8_c_to_mql8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_mql8_c_to_mql8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_nadh_c_to_nadh_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -411,12 +363,6 @@
       <species id="M_EXCHG_ecoli2_pyr_c_to_pyr_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_g6p_c_to_g6p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_g6p_c_to_g6p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_succoa_c_to_succoa_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_succoa_c_to_succoa_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_icit_c_to_icit_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
@@ -439,16 +385,10 @@
       <species id="M_EXCHG_ecoli2_nadph_c_to_nadph_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_cit_c_to_cit_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_cit_c_to_cit_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_r5p_c_to_r5p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_r5p_c_to_r5p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_f6p_c_to_f6p_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
       <species id="M_EXCHG_ecoli2_f6p_c_to_f6p_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_REV" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_FWD" compartment="exchg" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter sboTerm="SBO:0000626" id="cobra_default_lb" value="-INF" constant="true"/>
@@ -2521,11 +2461,9 @@
       <reaction id="R_EXCHG_ecoli1_succ_p_to_succ" name="Exchange for succ_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_succ_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_succ_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_acald_c_to_acald" name="Exchange for acald_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2561,11 +2499,9 @@
       <reaction id="R_EXCHG_ecoli1_lac__D_p_to_lac__D" name="Exchange for lac__D_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_lac__D_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_lac__D_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_oaa_c_to_oaa" name="Exchange for oaa_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2599,11 +2535,9 @@
       <reaction id="R_EXCHG_ecoli1_coa_p_to_coa" name="Exchange for coa_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_coa_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_coa_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_atp_c_to_atp" name="Exchange for atp_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2629,11 +2563,9 @@
       <reaction id="R_EXCHG_ecoli1_co2_p_to_co2" name="Exchange for co2_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_co2_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_co2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_ru5p__D_c_to_ru5p__D" name="Exchange for ru5p__D_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2669,31 +2601,25 @@
       <reaction id="R_EXCHG_ecoli1_etoh_p_to_etoh" name="Exchange for etoh_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_etoh_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_etoh_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_glyc_p_to_glyc" name="Exchange for glyc_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_glyc_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_glyc_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_for_p_to_for" name="Exchange for for_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_for_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_for_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_e4p_c_to_e4p" name="Exchange for e4p_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2765,21 +2691,17 @@
       <reaction id="R_EXCHG_ecoli1_glc__D_p_to_glc__D" name="Exchange for glc__D_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_glc__D_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_glc__D_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_h2_p_to_h2" name="Exchange for h2_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_h2_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_h2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_mql8_c_to_mql8" name="Exchange for mql8_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -2883,31 +2805,25 @@
       <reaction id="R_EXCHG_ecoli1_ac_p_to_ac" name="Exchange for ac_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_ac_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_ac_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_o2_p_to_o2" name="Exchange for o2_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_o2_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_o2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_q8_p_to_q8" name="Exchange for q8_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_q8_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_q8_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_succoa_c_to_succoa" name="Exchange for succoa_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3023,21 +2939,17 @@
       <reaction id="R_EXCHG_ecoli1_nadp_p_to_nadp" name="Exchange for nadp_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_nadp_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_nadp_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_mqn8_p_to_mqn8" name="Exchange for mqn8_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_mqn8_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_mqn8_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli1_r5p_c_to_r5p" name="Exchange for r5p_c_ecoli1 from single species ecoli1 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3063,11 +2975,9 @@
       <reaction id="R_EXCHG_ecoli1_nad_p_to_nad" name="Exchange for nad_p_ecoli1 from single species ecoli1 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_nad_p_ecoli1" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_nad_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_fdp_c_to_fdp" name="Exchange for fdp_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3093,11 +3003,9 @@
       <reaction id="R_EXCHG_ecoli2_succ_p_to_succ" name="Exchange for succ_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_succ_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_succ_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_acald_c_to_acald" name="Exchange for acald_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3133,11 +3041,9 @@
       <reaction id="R_EXCHG_ecoli2_lac__D_p_to_lac__D" name="Exchange for lac__D_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_lac__D_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_lac__D_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_oaa_c_to_oaa" name="Exchange for oaa_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3171,11 +3077,9 @@
       <reaction id="R_EXCHG_ecoli2_coa_p_to_coa" name="Exchange for coa_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_coa_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_coa_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_atp_c_to_atp" name="Exchange for atp_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3201,11 +3105,9 @@
       <reaction id="R_EXCHG_ecoli2_co2_p_to_co2" name="Exchange for co2_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_co2_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_co2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_ru5p__D_c_to_ru5p__D" name="Exchange for ru5p__D_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3241,31 +3143,25 @@
       <reaction id="R_EXCHG_ecoli2_etoh_p_to_etoh" name="Exchange for etoh_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_etoh_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_etoh_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_glyc_p_to_glyc" name="Exchange for glyc_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_glyc_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_glyc_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_for_p_to_for" name="Exchange for for_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_for_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_for_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_e4p_c_to_e4p" name="Exchange for e4p_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3337,21 +3233,17 @@
       <reaction id="R_EXCHG_ecoli2_glc__D_p_to_glc__D" name="Exchange for glc__D_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_glc__D_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_glc__D_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_h2_p_to_h2" name="Exchange for h2_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_h2_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_h2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_mql8_c_to_mql8" name="Exchange for mql8_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3455,31 +3347,25 @@
       <reaction id="R_EXCHG_ecoli2_ac_p_to_ac" name="Exchange for ac_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_ac_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_ac_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_o2_p_to_o2" name="Exchange for o2_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_o2_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_o2_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_q8_p_to_q8" name="Exchange for q8_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_q8_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_q8_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_succoa_c_to_succoa" name="Exchange for succoa_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3595,21 +3481,17 @@
       <reaction id="R_EXCHG_ecoli2_nadp_p_to_nadp" name="Exchange for nadp_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_nadp_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_nadp_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_mqn8_p_to_mqn8" name="Exchange for mqn8_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_mqn8_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_mqn8_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_EXCHG_ecoli2_r5p_c_to_r5p" name="Exchange for r5p_c_ecoli2 from single species ecoli2 to exchange compartment" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="cobra_0_bound">
@@ -3635,11 +3517,9 @@
       <reaction id="R_EXCHG_ecoli2_nad_p_to_nad" name="Exchange for nad_p_ecoli2 from single species ecoli2 to exchange compartment" reversible="true" fast="false" fbc:lowerFluxBound="minus_inf" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_nad_p_ecoli2" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
         </listOfReactants>
         <listOfProducts>
           <speciesReference species="M_nad_exchg" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
         </listOfProducts>
       </reaction>
       <reaction id="R_fdp_c_to_fdp_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
@@ -3701,40 +3581,6 @@
       <reaction id="R_g3p_c_to_g3p_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli1_g3p_c_to_g3p_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -3846,40 +3692,6 @@
           <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_oaa_c_to_oaa_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli1_oaa_c_to_oaa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -3948,40 +3760,6 @@
           <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_atp_c_to_atp_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli1_atp_c_to_atp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -4041,40 +3819,6 @@
       <reaction id="R_pep_c_to_pep_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli1_pep_c_to_pep_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -4177,108 +3921,6 @@
       <reaction id="R_dha_c_to_dha_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli1_dha_c_to_dha_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -4449,74 +4091,6 @@
       <reaction id="R_mal__L_c_to_mal__L_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli1_mal__L_c_to_mal__L_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -4823,108 +4397,6 @@
       <reaction id="R_g6p_c_to_g6p_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli1_g6p_c_to_g6p_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -5308,74 +4780,6 @@
           <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_r5p_c_to_r5p_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli1_r5p_c_to_r5p_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -5444,40 +4848,6 @@
           <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC1_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC2_REV_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC1_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC2_FWD_ecoli1" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli1_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli1" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_fdp_c_to_fdp_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli2_fdp_c_to_fdp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -5537,40 +4907,6 @@
       <reaction id="R_g3p_c_to_g3p_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_g3p_c_to_g3p_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_succ_p_to_succ_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_succ_p_to_succ_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -5682,40 +5018,6 @@
           <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_lac__D_p_to_lac__D_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_lac__D_p_to_lac__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_oaa_c_to_oaa_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli2_oaa_c_to_oaa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -5784,40 +5086,6 @@
           <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_coa_p_to_coa_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_coa_p_to_coa_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_atp_c_to_atp_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli2_atp_c_to_atp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -5877,40 +5145,6 @@
       <reaction id="R_pep_c_to_pep_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_pep_c_to_pep_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_co2_p_to_co2_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_co2_p_to_co2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -6013,108 +5247,6 @@
       <reaction id="R_dha_c_to_dha_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_dha_c_to_dha_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_etoh_p_to_etoh_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_etoh_p_to_etoh_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glyc_p_to_glyc_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_glyc_p_to_glyc_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_for_p_to_for_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_for_p_to_for_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -6285,74 +5417,6 @@
       <reaction id="R_mal__L_c_to_mal__L_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_mal__L_c_to_mal__L_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_glc__D_p_to_glc__D_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_glc__D_p_to_glc__D_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_h2_p_to_h2_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_h2_p_to_h2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -6659,108 +5723,6 @@
       <reaction id="R_g6p_c_to_g6p_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_g6p_c_to_g6p_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_ac_p_to_ac_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_ac_p_to_ac_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_o2_p_to_o2_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_o2_p_to_o2_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_q8_p_to_q8_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_q8_p_to_q8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>
@@ -7144,74 +6106,6 @@
           <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfProducts>
       </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nadp_p_to_nadp_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_nadp_p_to_nadp_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_mqn8_p_to_mqn8_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_mqn8_p_to_mqn8_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
       <reaction id="R_r5p_c_to_r5p_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfProducts>
           <speciesReference species="M_EXCHG_ecoli2_r5p_c_to_r5p_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
@@ -7271,40 +6165,6 @@
       <reaction id="R_f6p_c_to_f6p_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
         <listOfReactants>
           <speciesReference species="M_EXCHG_ecoli2_f6p_c_to_f6p_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC1_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC2_REV_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_REV" stoichiometry="1" constant="true"/>
-          <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfReactants>
-        <listOfProducts>
-          <speciesReference species="M_adp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_h_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-          <speciesReference species="M_pi_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC1_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfProducts>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
-        </listOfProducts>
-      </reaction>
-      <reaction id="R_nad_p_to_nad_PSEUDOREAC2_FWD_ecoli2" reversible="false" fast="false" fbc:lowerFluxBound="cobra_0_bound" fbc:upperFluxBound="plus_inf">
-        <listOfReactants>
-          <speciesReference species="M_EXCHG_ecoli2_nad_p_to_nad_PSEUDOMET_FWD" stoichiometry="1" constant="true"/>
           <speciesReference species="M_h2o_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
           <speciesReference species="M_atp_c_ecoli2" stoichiometry="0.333333333333333" constant="true"/>
         </listOfReactants>

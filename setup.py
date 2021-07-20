@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="commmodelpy",
-    version="0.0.1",
+    version="0.0.3",
     author="Paulocracy",
     author_email="bekiaris@mpi-magdeburg.mpg.de",
     description="The commmodelpy package",
